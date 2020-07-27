@@ -4,20 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="icon" type="image" href="images\logo2.png">
 </head>
 <style>
 span{color:aqua;
 }
 </style>
+
 <body>
     <!--Первый блок-->
     <div>
         <div>
-             <img src="images\top_bg.jpg" alt="top background">
             <div style="float: left; margin-right: 20px; background-color: black;">
-                <img src="images\logo.png" alt="logo">
+               <a href=https://innopolis.university target="_blank"><img src="images\logo.png" alt="logo"/></a>
+               <img src="images\top_bg.jpg" alt="top background">
             </div>
-                       <div style="float:left; margin-right: 20px;">
+                <div style="float:right; margin-right: 20px;">
                 ЗАКАЗАТЬ БИЛЕТ ПРЕИМУЩЕСТВА ФИЛЬМЫ КОНТАКТЫ
             </div>
             <div>
@@ -25,18 +27,21 @@ span{color:aqua;
             </div>
         </div>
         <div>
-            <h1>Закажите билет в кино</h1>
-            <p><strong>Всем покупателям подарок!</strong></p>
+            <h1>
+                Закажите билет в кино
+            </h1>
+            <p>
+                <b>Всем покупателям подарок!</b>
+            </p>
         </div>
     </div>
     <!--Конец первого экрана-->
 
 <!--Второй экран-->
 <div>
-
-    <div>
-        <h1>
-            <strong>Добро пожаловать!</strong> 
+    <div style="float:right; margin-right:100px;">
+        <h1 style="font-family:Roboto ;font-size: 40pt;">
+            <b>Добро пожаловать!</b> 
         </h1>
         <p>
             Cumque dolorem eum harum laudantium libero molestias saepe soluta?
@@ -55,14 +60,16 @@ span{color:aqua;
     </div>
 
     <div>
-        <h1><strong>Почему мы?</strong></h1>
+        <h1 style="font-family:Roboto; font-size: 50pt;margin-left: 3em;">
+            <b>Почему мы?</b>
+        </h1>
     </div>
 
     <div>
         <div>
             <img src="images\b2_icon_1.jpg" alt="b2_icon_1.jpg">
            <h1>
-               <strong>Большие экраны</strong>
+               <b>Большие экраны</b>
             </h1>
            <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. At autem cum dolores dolorum eius error expedita illum itaque molestiae mollitia nemo, nostrum officia quas ratione tempora temporibus veritatis vero voluptates.            </p>
@@ -71,7 +78,7 @@ span{color:aqua;
         <div>
             <img src="images\b2_icon_2.jpg" alt="b2_icon_2.jpg">
             <h1>
-            <strong>Объемный звук</strong>
+            <b>Объемный звук</b>
             </h1>
            <p>
             Lorem ipsum dolor sit amet.
@@ -81,7 +88,7 @@ span{color:aqua;
         <div>
             <img src="images\b2_icon_3.jpg" alt="b2_icon_3.jpg">
            <h1>
-              <strong>Удобные кресла</strong> 
+              <b>Удобные кресла</b> 
             </h1> 
            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. At autem cum dolores dolorum eius error expedita illum itaque molestiae mollitia nemo, nostrum officia quas ratione tempora temporibus veritatis vero voluptates.
             </p>
@@ -93,23 +100,20 @@ span{color:aqua;
 <!--Третий экран-->
 <div>
     <div>
-        <strong>Выберите фильм</strong>
+        <b>Выберите фильм</b>
     </div>
-    <div>
-        <p><strong>Начало сеанса 	Название фильма 	Жанр</strong> 
-            <br>
-            10:00	Человек-паук	фантастика, боевик, приключения
-            <br>
-            12:00	Собачья жизнь 2	фэнтези, драма, комедия
-            <br>
-            14:00	История игрушек 4	мультфильм, фэнтези, комедия
-            <br>
-            16:00	Люди в черном: Интернэшнл	фантастика, боевик, комедия
-        </p>
+    <table>
+        <tr><th>Начало сеанса</th><th>Название фильма</th><th>Жанр</th></tr>
+        <tr><td> 10:00</td><td><a href=https://www.kinopoisk.ru/film/838/Человек-паук target="_blank">Человек-паук</a></td><td>фантастика, боевик, приключения</td></tr>
+        <tr><td> 12:00</td><td><a href=https://www.kinopoisk.ru/film/1122114/ target="_blank">Собачья жизнь 2</a></td><td>фэнтези, драма, комедия</td></tr>
+        <tr><td> 14:00</td><td><a href=https://www.kinopoisk.ru/film/846824/ target="_blank">История игрушек 4</a></td><td>мультфильм, фэнтези, комедия</td></tr>
+        <tr><td> 16:00</td><td><a href=https://www.kinopoisk.ru/film/693730/ target="_blank">Люди в черном: Интернэшнл</a></td><td>фантастика, боевик, комедия</td></tr>
+        	
+    </table>
     <div>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid eum facere obcaecati quam rem repellendus veritatis. Aliquam beatae, delectus dignissimos enim exercitationem mollitia nisi pariatur quaerat quam, qui quibusdam sunt!
     </div>
-</div>
+</table>
 <!--Конец третьего экрана-->
 
 <!--Четвертый экран-->
@@ -117,64 +121,92 @@ span{color:aqua;
     <img src="images\b4_img.jpg" alt="b4_img.jpg">
     <img src="images\b4_bg.jpg" alt="b4_bg.jpg">
     <h1>
-        <strong>Подарок каждому!</strong>
+        <b>Подарок каждому!</b>
     </h1>
-    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam aspernatur, cum, cupiditate excepturi expedita libero mollitia nesciunt nihil nobis obcaecati quasi ratione reprehenderit sequi sint, tenetur unde velit veniam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam aspernatur, cum, cupiditate excepturi expedita libero mollitia nesciunt nihil nobis obcaecati quasi ratione reprehenderit sequi sint, tenetur unde velit veniam!
-
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam aspernatur, cum, cupiditate excepturi expedita libero mollitia nesciunt nihil nobis obcaecati quasi ratione reprehenderit sequi sint, tenetur unde velit veniam!
-
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam aspernatur, cum, cupiditate excepturi expedita libero mollitia nesciunt nihil nobis obcaecati quasi ratione reprehenderit sequi sint, tenetur unde velit veniam!
-    </p>  
-    Получить подарок
+    <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam aspernatur, cum, cupiditate excepturi expedita libero mollitia
+        <br/>
+        nesciunt nihil nobis obcaecati quasi ratione reprehenderit sequi sint, tenetur unde velit veniam! Lorem ipsum dolor sit amet,
+        <br/>
+        consectetur adipisicing elit. Ab aperiam aspernatur, cum, cupiditate excepturi expedita libero mollitia nesciunt nihil nobis
+        <br/>
+        obcaecati quasi ratione reprehenderit sequi sint, tenetur unde velit veniam!
+    </p> 
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam aspernatur, cum, cupiditate excepturi expedita libero mollitia
+        <br/>
+        nesciunt nihil nobis obcaecati quasi ratione reprehenderit sequi sint, tenetur unde velit veniam!
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam aspernatur, cum, cupiditate excepturi expedita libero mollitia
+        <br/>
+        nesciunt nihil nobis obcaecati quasi ratione reprehenderit sequi sint, tenetur unde velit veniam!
+    </p> 
+   <button>Получить подарок</button> 
 </div>
 <!--Конец четвертого экрана-->
 
 <!--Пятый экран-->
 <div>
     <h>
-        <strong>Фильмы</strong>
+        <b>Фильмы</b>
     </h>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci alias, animi, commodi eius ipsum, laudantium neque nihil omnis perferendis sed sequi tempore! Ad ea esse ex inventore repudiandae, suscipit!
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci alias, animi, commodi eius ipsum,
+        <br/>
+     laudantium neque nihil omnis perferendis sed sequi tempore! Ad ea esse ex inventore repudiandae, suscipit!
     </p>
 </div>
-<img src="images\mov1.jpg" alt="mov1.jpg">
-<strong>Человек-паук</strong>
-Lorem ipsum dolor sit amet, consectetur
-  
-<img src="images\mov2.jpg" alt="mov2.jpg">
-<strong>Собачья жизнь 2</strong>
-Lorem ipsum dolor sit amet, consectetur
-  
-<img src="images\mov3.jpg" alt="mov3.jpg">
-<strong>Люди в черном: Интернэшнл</strong>
+<div>
+<table style="align:center; margin-left:px; margin-right:0em;" cellspacing="100px">
+    <tr>
+        <td>
+            <img src="images\mov1.jpg" alt="mov1.jpg">
+        </td>
+        <td>
+            <img src="images\mov2.jpg" alt="mov2.jpg">
+        </td> 
+        <td>
+            <img src="images\mov3.jpg" alt="mov3.jpg">
+        </td> 
+    </tr>
+    <tr>
+        <td>
+          <img src="images\mov1.jpg" alt="mov1.jpg">
+        </td>
+        <td>
+            <img src="images\mov2.jpg" alt="mov2.jpg">
+        </td> 
+        <td>
+          <img src="images\mov3.jpg" alt="mov3.jpg">
+        </td> 
+    </tr>
+    <tr>
+        <td>
+         <img src="images\mov1.jpg" alt="mov1.jpg">
+        </td>
+        <td>
+           <img src="images\mov2.jpg" alt="mov2.jpg">
+         </td> 
+        <td>
+          <img src="images\mov3.jpg" alt="mov3.jpg">
+         </td> 
+    </tr>
+</table>
+</div>
+
+<div>
+<b>Человек-паук</b>
 Lorem ipsum dolor sit amet, consectetur
   
 
-<strong>Человек-паук</strong>
+<b>Собачья жизнь 2</b>
 Lorem ipsum dolor sit amet, consectetur
   
 
-<strong>Собачья жизнь 2</strong>
+<b>Люди в черном: Интернэшнл</b>
 Lorem ipsum dolor sit amet, consectetur
-  
+</div> 
 
-<strong>Люди в черном: Интернэшнл</strong>
-Lorem ipsum dolor sit amet, consectetur
-  
-
-<strong>Человек-паук</strong>
-Lorem ipsum dolor sit amet, consectetur
-  
-
-<strong>Собачья жизнь 2</strong>
-Lorem ipsum dolor sit amet, consectetur
-  
-
-<strong>Люди в черном: Интернэшнл</strong>
-Lorem ipsum dolor sit amet, consectetur
-  
-
-    
+<footer>  
 Имя*
 
 Выбор1
@@ -185,6 +217,6 @@ Lorem ipsum dolor sit amet, consectetur
 
 Загрузить файл
 Отправить
-<footer></footer>
+</footer>
 </body>
 </html>
