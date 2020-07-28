@@ -6,13 +6,16 @@
     <title>Document</title>
     <link rel="icon" type="image" href="images\logo2.png">
 </head>
-<style>
-span{color:aqua;
-}
-</style>
 
 <body>
     <!--Первый блок-->
+ <style>
+     th, td{
+         border: 1px solid black;
+         padding:5px 10px;
+     }
+ </style>
+
     <div>
         <div>
             <div style="float: left; margin-right: 20px; background-color: black;">
@@ -30,19 +33,19 @@ span{color:aqua;
             <h1>
                 Закажите билет в кино
             </h1>
-            <p>
+            <h2>
                 <b>Всем покупателям подарок!</b>
-            </p>
+            </h2>
         </div>
     </div>
     <!--Конец первого экрана-->
 
 <!--Второй экран-->
 <div>
-    <div style="float:right; margin-right:100px;">
-        <h1 style="font-family:Roboto ;font-size: 40pt;">
+    <blockquote="float:right; margin-right:100px;">
+        <h2 style="font-family:Roboto ;font-size: 40pt;">
             <b>Добро пожаловать!</b> 
-        </h1>
+        </h2>
         <p>
             Cumque dolorem eum harum laudantium libero molestias saepe soluta?
             <br/>
@@ -57,29 +60,29 @@ span{color:aqua;
             <br/>
             Debitis enim optio saepe voluptatibus.
         </p>
-    </div>
+    </blockquote=>
 
     <div>
-        <h1 style="font-family:Roboto; font-size: 50pt;margin-left: 3em;">
+        <h3 style="font-family:Roboto; font-size: 50pt;margin-left: 3em;">
             <b>Почему мы?</b>
-        </h1>
+        </h3>
     </div>
 
     <div>
         <div>
             <img src="images\b2_icon_1.jpg" alt="b2_icon_1.jpg">
-           <h1>
+           <h4>
                <b>Большие экраны</b>
-            </h1>
+            </h4>
            <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. At autem cum dolores dolorum eius error expedita illum itaque molestiae mollitia nemo, nostrum officia quas ratione tempora temporibus veritatis vero voluptates.            </p>
         </div>
 
         <div>
             <img src="images\b2_icon_2.jpg" alt="b2_icon_2.jpg">
-            <h1>
+            <h4>
             <b>Объемный звук</b>
-            </h1>
+            </h4>
            <p>
             Lorem ipsum dolor sit amet.
            </p>
@@ -87,9 +90,9 @@ span{color:aqua;
 
         <div>
             <img src="images\b2_icon_3.jpg" alt="b2_icon_3.jpg">
-           <h1>
+           <h4>
               <b>Удобные кресла</b> 
-            </h1> 
+            </h4> 
            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. At autem cum dolores dolorum eius error expedita illum itaque molestiae mollitia nemo, nostrum officia quas ratione tempora temporibus veritatis vero voluptates.
             </p>
         </div>
@@ -99,30 +102,38 @@ span{color:aqua;
 
 <!--Третий экран-->
 <div>
-    <div>
-        <b>Выберите фильм</b>
-    </div>
     <table>
-        <tr><th>Начало сеанса</th><th>Название фильма</th><th>Жанр</th></tr>
-        <tr><td> 10:00</td><td><a href=https://www.kinopoisk.ru/film/838/Человек-паук target="_blank">Человек-паук</a></td><td>фантастика, боевик, приключения</td></tr>
-        <tr><td> 12:00</td><td><a href=https://www.kinopoisk.ru/film/1122114/ target="_blank">Собачья жизнь 2</a></td><td>фэнтези, драма, комедия</td></tr>
-        <tr><td> 14:00</td><td><a href=https://www.kinopoisk.ru/film/846824/ target="_blank">История игрушек 4</a></td><td>мультфильм, фэнтези, комедия</td></tr>
-        <tr><td> 16:00</td><td><a href=https://www.kinopoisk.ru/film/693730/ target="_blank">Люди в черном: Интернэшнл</a></td><td>фантастика, боевик, комедия</td></tr>
-        	
+        <caption>Выберите фильм</caption>
+        <thead>
+        <tr><th>Check</th><th>Начало сеанса</th><th>Название фильма</th><th>Жанр</th></tr>
+        </thead>
+        <tbody>
+        <tr><td>Check</td><td> 10:00</td><td><a href=https://www.kinopoisk.ru/film/838/Человек-паук target="_blank">Человек-паук</a></td><td>фантастика, боевик, приключения</td></tr>
+        <tr><td>Check</td><td> 12:00</td><td><a href=https://www.kinopoisk.ru/film/1122114/ target="_blank">Собачья жизнь 2</a></td><td>фэнтези, драма, комедия</td></tr>
+        <tr><td>Check</td><td> 14:00</td><td><a href=https://www.kinopoisk.ru/film/846824/ target="_blank">История игрушек 4</a></td><td>мультфильм, фэнтези, комедия</td></tr>
+        <tr><td>Check</td><td> 16:00</td><td><a href=https://www.kinopoisk.ru/film/693730/ target="_blank">Люди в черном: Интернэшнл</a></td><td>фантастика, боевик, комедия</td></tr>
+        </tbody>
+
+        <tfoot>
+        </tfoot>	
     </table>
     <div>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid eum facere obcaecati quam rem repellendus veritatis. Aliquam beatae, delectus dignissimos enim exercitationem mollitia nisi pariatur quaerat quam, qui quibusdam sunt!
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid eum facere obcaecati quam rem repellendus veritatis. Aliquam beatae,
+        <br/>
+        delectus dignissimos enim exercitationem mollitia nisi pariatur quaerat quam, qui quibusdam sunt!
+        </p>
     </div>
 </table>
 <!--Конец третьего экрана-->
 
 <!--Четвертый экран-->
-<div>
+<section>
     <img src="images\b4_img.jpg" alt="b4_img.jpg">
     <img src="images\b4_bg.jpg" alt="b4_bg.jpg">
-    <h1>
+    <h5>
         <b>Подарок каждому!</b>
-    </h1>
+    </h5>
     <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam aspernatur, cum, cupiditate excepturi expedita libero mollitia
         <br/>
         nesciunt nihil nobis obcaecati quasi ratione reprehenderit sequi sint, tenetur unde velit veniam! Lorem ipsum dolor sit amet,
@@ -141,20 +152,24 @@ span{color:aqua;
         <br/>
         nesciunt nihil nobis obcaecati quasi ratione reprehenderit sequi sint, tenetur unde velit veniam!
     </p> 
-   <button>Получить подарок</button> 
+</section>
+<div>
+    <button>Получить подарок</button> 
 </div>
+   
+
 <!--Конец четвертого экрана-->
 
 <!--Пятый экран-->
-<div>
-    <h>
+<blockquote>
+    <h5>
         <b>Фильмы</b>
-    </h>
+    </h5>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci alias, animi, commodi eius ipsum,
         <br/>
      laudantium neque nihil omnis perferendis sed sequi tempore! Ad ea esse ex inventore repudiandae, suscipit!
     </p>
-</div>
+</blockquote>
 <div>
 <table style="align:center; margin-left:px; margin-right:0em;" cellspacing="100px">
     <tr>
@@ -206,7 +221,62 @@ Lorem ipsum dolor sit amet, consectetur
 Lorem ipsum dolor sit amet, consectetur
 </div> 
 
-<footer>  
+<footer> 
+    <form action="" method="GET">
+        <div>
+            <input type="text" name="login">
+        </div>
+        <div>
+            <input type="password" name="password">
+        </div>
+        <div>
+            <input type="email" name="email">
+        </div>
+        <div>
+            <input type="submit">
+        </div>
+        <div>
+            <input type="text" placeholder="тут подсказка, чувачок">
+        </div>
+        <div>
+        <select name="selector" id="">
+            <option value="selector value 1">
+                value1
+            </option>
+            <option value="selector value 2">
+                value2
+            </option>
+            <option value="selector value 3">
+                value3
+            </option>
+        </select>
+        </div>
+        <div>
+            <label for="radio1">
+                radio1
+            </label>
+            <input type="radio" name="radio1" id="radio1">
+            <br>
+            <label for="radio2">
+                radio2
+            </label>
+            <input type="radio" name="radio2" id="radio2">
+            <br>
+            <label for="radio3">
+                radio3
+            </label>
+            <input type="radio" name="radio3" id="radio3">
+        </div>
+        <textarea name="textarea" id="" cols="30" rows="10" placeholder="подсказкэ"></textarea>
+        <div>
+            <label for="rules">
+                жми сюда
+            </label>
+            <input type="checkbox" id="rules">
+        </div>
+        <input type="file">
+        <input type="submit">
+    </form> 
 Имя*
 
 Выбор1
