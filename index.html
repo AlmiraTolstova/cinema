@@ -3,48 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Первый кинотеатр в Иннополисе</title>
     <link rel="icon" type="image" href="images\logo2.png">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
     <!--Первый блок-->
- <style>
-     th, td{
-         border: 1px solid black;
-         padding:5px 10px;
-     }
- </style>
-
+<section>
     <header style="background-color: darkgrey;">
         <a href=https://innopolis.university target ="_blank"><img src="images\logo.png" alt="logo"/>
         </a>
             <nav>
-                <a href="#">ЗАКАЗАТЬ БИЛЕТ</a>
-                <a href="#">ПРЕИМУЩЕСТВА</a>
-                <a href="#">ФИЛЬМЫ</a>
-                <a href="#">КОНТАКТЫ</a>
+                <ul>
+                    <li><a href="#ORDER A TICKET">ЗАКАЗАТЬ БИЛЕТ</a></li>
+                    <li><a href="#advantages">ПРЕИМУЩЕСТВА</a></li>
+                    <li><a href="#Fims">ФИЛЬМЫ</a></li>
+                    <li><a href="#contacts">КОНТАКТЫ</a></li>
+                </ul>
             </nav>
             <sub>Ваш город:</sub>
             <u>Москва</u> 
     </header>
 
     <div>
-        <img src="images\top_bg.jpg" alt="top background">
+        <img src="images\top_bg.jpg" alt="there is should be a picture of a cinema">
     </div>
 
     <div>
         <h1>
          Закажите билет в кино
         </h1>
-        <b>Всем покупателям подарок!</b>
+        <p>Всем покупателям подарок!</p>
     </div>
+</section>    
 <!--Конец первого экрана-->
 
 <!--Второй экран-->
-<div>
-    <blockquote style="float:right; margin-right:100px;">
-        <h2 style="font-family:Roboto ;font-size: 40pt;">
+
+    <blockquote>
+        <h2>
             <b>Добро пожаловать!</b> 
         </h2>
         <p>
@@ -63,50 +62,56 @@
         </p>
     </blockquote>
 
+<section id="advantages">
     <div>
-        <h3 style="font-family:Roboto; font-size: 50pt;margin-left: 3em;">
+         <h2 style="font-family:Roboto; font-size: 50pt;margin-left: 3em;">
             <b>Почему мы?</b>
-        </h3>
+        </h2>
     </div>
 
     <div>
         <div>
-            <img src="images\b2_icon_1.jpg" alt="b2_icon_1.jpg">
-           <h4>
+            <img src="images\b2_icon_1.jpg" alt="Picture Large screens">
+           <h3>
                <b>Большие экраны</b>
-            </h4>
+            </h3>
            <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. At autem cum dolores dolorum eius error expedita illum itaque molestiae mollitia nemo, nostrum officia quas ratione tempora temporibus veritatis vero voluptates.            </p>
         </div>
 
         <div>
-            <img src="images\b2_icon_2.jpg" alt="b2_icon_2.jpg">
-            <h4>
+            <img src="images\b2_icon_2.jpg" alt="Picture Surround Sound">
+            <h3>
             <b>Объемный звук</b>
-            </h4>
+            </h3>
            <p>
             Lorem ipsum dolor sit amet.
            </p>
         </div>
 
         <div>
-            <img src="images\b2_icon_3.jpg" alt="b2_icon_3.jpg">
-           <h4>
+            <img src="images\b2_icon_3.jpg" alt="Picture Comfortable armchairs">
+           <h3>
               <b>Удобные кресла</b> 
-            </h4> 
+            </h3> 
            <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. At autem cum dolores dolorum eius error expedita illum itaque molestiae mollitia nemo, nostrum officia quas ratione tempora temporibus veritatis vero voluptates.
             </p>
         </div>
     </div>
-</div>
+</section>
 <!--Конец второго экрана-->
 
 <!--Третий экран-->
-<div>
-    <table>
+<section id="ORDER A TICKET">
+    <table border="1px"cellpadding="30px"cellspaсing="0px">
         <caption>Выберите фильм</caption>
         <thead>
-        <tr><th>Check</th><th>Начало сеанса</th><th>Название фильма</th><th>Жанр</th></tr>
+        <tr>
+            <th>Check</th>
+            <th>Time</th>
+            <th>Stuff that will happen</th>
+            <th>Жанр</th>
+        </tr>
         </thead>
         <tbody>
         <tr><td>Check</td><td> 10:00</td><td><a href=https://www.kinopoisk.ru/film/838/Человек-паук target="_blank">Человек-паук</a></td><td>фантастика, боевик, приключения</td></tr>
@@ -119,22 +124,23 @@
         </tfoot>	
     </table>
     <div>
+ 
         <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid eum facere obcaecati quam rem repellendus veritatis. Aliquam beatae,
         <br/>
         delectus dignissimos enim exercitationem mollitia nisi pariatur quaerat quam, qui quibusdam sunt!
         </p>
     </div>
-</table>
+</section>
 <!--Конец третьего экрана-->
 
 <!--Четвертый экран-->
 <section>
-    <img src="images\b4_img.jpg" alt="b4_img.jpg">
-    <img src="images\b4_bg.jpg" alt="b4_bg.jpg">
-    <h5>
+    <img src="images\b4_img.jpg" alt="picture of a gift">
+    <img src="images\b4_bg.jpg" alt="picture">
+    <h2>
         <b>Подарок каждому!</b>
-    </h5>
+    </h2>
     <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam aspernatur, cum, cupiditate excepturi expedita libero mollitia
         <br/>
         nesciunt nihil nobis obcaecati quasi ratione reprehenderit sequi sint, tenetur unde velit veniam! Lorem ipsum dolor sit amet,
@@ -153,141 +159,162 @@
         <br/>
         nesciunt nihil nobis obcaecati quasi ratione reprehenderit sequi sint, tenetur unde velit veniam!
     </p> 
+    <div>
+        <button>Получить подарок</button> 
+    </div>
 </section>
-<div>
-    <button>Получить подарок</button> 
-</div>
-   
-
-<!--Конец четвертого экрана-->
+   <!--Конец четвертого экрана-->
 
 <!--Пятый экран-->
-<blockquote>
-    <h5>
-        <b>Фильмы</b>
-    </h5>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci alias, animi, commodi eius ipsum,
-        <br/>
-     laudantium neque nihil omnis perferendis sed sequi tempore! Ad ea esse ex inventore repudiandae, suscipit!
-    </p>
-</blockquote>
-<div>
-<table style="margin-left:px; margin-right:0em;" cellspacing="100px">
-    <tr>
-        <td>
-            <img src="images\mov1.jpg" alt="mov1.jpg">
-        </td>
-        <td>
-            <img src="images\mov2.jpg" alt="mov2.jpg">
-        </td> 
-        <td>
-            <img src="images\mov3.jpg" alt="mov3.jpg">
-        </td> 
-    </tr>
-    <tr>
-        <td>
-          <img src="images\mov1.jpg" alt="mov1.jpg">
-        </td>
-        <td>
-            <img src="images\mov2.jpg" alt="mov2.jpg">
-        </td> 
-        <td>
-          <img src="images\mov3.jpg" alt="mov3.jpg">
-        </td> 
-    </tr>
-    <tr>
-        <td>
-         <img src="images\mov1.jpg" alt="mov1.jpg">
-        </td>
-        <td>
-           <img src="images\mov2.jpg" alt="mov2.jpg">
-         </td> 
-        <td>
-          <img src="images\mov3.jpg" alt="mov3.jpg">
-         </td> 
-    </tr>
-</table>
-</div>
+<section id="Fims">
+       <blockquote>
+        <h2>
+            <b>Фильмы</b>
+        </h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci alias, animi, commodi eius ipsum,
+            <br/>
+        laudantium neque nihil omnis perferendis sed sequi tempore! Ad ea esse ex inventore repudiandae, suscipit!
+        </p>
+    </blockquote>
+    <div>
+    <table style="margin-left:px; margin-right:0em;" cellspacing="100px">
+        <tr>
+            <td>
+                <img src="images\mov1.jpg" alt="spiderman movie pictures">
+            </td>
+            <td>
+                <img src="images\mov2.jpg" alt="picture of a movie of a dog's life">
+            </td> 
+            <td>
+                <img src="images\mov3.jpg" alt="men in black movie pictures">
+            </td> 
+        </tr>
+        <tr>
+            <td>
+            <img src="images\mov1.jpg" alt="spiderman movie pictures">
+            </td>
+            <td>
+                <img src="images\mov2.jpg" alt="picture of a movie of a dog's life">
+            </td> 
+            <td>
+            <img src="images\mov3.jpg" alt="men in black movie pictures">
+            </td> 
+        </tr>
+        <tr>
+            <td>
+            <img src="images\mov1.jpg" alt="spiderman movie pictures">
+            </td>
+            <td>
+            <img src="images\mov2.jpg" alt="picture of a movie of a dog's life">
+            </td> 
+            <td>
+            <img src="images\mov3.jpg" alt="men in black movie pictures">
+            </td> 
+        </tr>
+    </table>
+    </div>
 
-<div>
-<b>Человек-паук</b>
-Lorem ipsum dolor sit amet, consectetur
-  
+    <div>
+    <b>Человек-паук</b>
+    Lorem ipsum dolor sit amet, consectetur
+    
 
-<b>Собачья жизнь 2</b>
-Lorem ipsum dolor sit amet, consectetur
-  
+    <b>Собачья жизнь 2</b>
+    Lorem ipsum dolor sit amet, consectetur
+    
 
-<b>Люди в черном: Интернэшнл</b>
-Lorem ipsum dolor sit amet, consectetur
-</div> 
+    <b>Люди в черном: Интернэшнл</b>
+    Lorem ipsum dolor sit amet, consectetur
+    </div> 
 
-<footer> 
-    <form action="" method="GET">
-        <div>
-            <input type="text" name="login">
-        </div>
-        <div>
-            <input type="password" name="password">
-        </div>
-        <div>
-            <input type="email" name="email">
-        </div>
-        <div>
-            <input type="submit">
-        </div>
-        <div>
-            <input type="text" placeholder="тут подсказка, чувачок">
-        </div>
-        <div>
-        <select name="selector" id="">
-            <option value="selector value 1">
-                value1
+    <div>
+        <p> Шаг 9, 10, 11. Атрибуты нумерованных списков</p>
+        <ul>
+            <li>
+                1
+            </li>
+            <li>
+                2
+            </li>
+                <ol type="I" reversed start="10">
+                    <li>
+                        one
+                    </li>
+                    <li>
+                        two
+                    </li>
+                </ol>
+            <li>
+                3
+            </li>
+        </ul>
+    </div>
+
+</section>
+<footer id="contacts">
+    <!--Форма ввода--> 
+    <form action="order.php" method="GET">
+        <input type="text" placeholder="Имя*" name="" id="" required>
+        <input type="email" placeholder="Email*" name="" id="" required>
+        <br>
+        <!--Выпадающий список-->
+        <select name="select" required>
+            <option value="value1"selected>
+                Выбор1
             </option>
-            <option value="selector value 2">
-                value2
+            <option value="value2">
+                Выбор2
             </option>
-            <option value="selector value 3">
-                value3
+            <option value="value3">
+                Выбор3
+            </option>
+            <option value="value4">
+                Выбор4
+            </option>
+            <option value="value5">
+                Выбор5
+            </option>
+            <option value="value6">
+                Выбор6
+            </option>
+            <option value="value7">
+                Выбор7
+            </option>
+            <option value="value8">
+                Выбор8
+            </option>
+            <option value="value9">
+                Выбор9
+            </option>
+            <option value="value10">
+                Выбор10
             </option>
         </select>
-        </div>
-        <div>
-            <label for="radio1">
-                radio1
-            </label>
-            <input type="radio" name="radio1" id="radio1">
-            <br>
-            <label for="radio2">
-                radio2
-            </label>
-            <input type="radio" name="radio2" id="radio2">
-            <br>
-            <label for="radio3">
-                radio3
-            </label>
-            <input type="radio" name="radio3" id="radio3">
-        </div>
-        <textarea name="textarea" id="" cols="30" rows="10" placeholder="подсказкэ"></textarea>
-        <div>
-            <label for="rules">
-                жми сюда
-            </label>
-            <input type="checkbox" id="rules">
-        </div>
+        <!--Радио кнопка-->
+        <br>
+        <label for="radioButton1">Выбор1</label>
+        <input type="radio" id="radioButton1" name="choise" value="radio1">
+        </input>
+        <br>
+        <label for="radioButton2">Выбор2</label>
+        <input type="radio" id="radioButton2" name="choise" value="radio2">
+        </input>
+        <br>
+        <!--Поля для ввода текста-->
+        <textarea id="story" name="story" rows="10" cols="33" placeholder="Комментарий"></textarea>
+        <br>
+        <!--Чекбокс-->
+        <input type="checkbox" id="check">
+        </input>
+        <label for="check">Я согласен на обработку персональных данных</label>
+        <br>
         <input type="file">
-        <input type="submit">
-    </form> 
-Имя*
+        <button type="submit">
+            Заказать
+        </button>
+    </form>
+  </footer>
 
-Выбор1
-Выбор1
-Выбор2
-Комментарий
-Я согласен на обработку персональных данных
 
-Загрузить файл
-Отправить
-</footer>
 </body>
 </html>
