@@ -1,21 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Первый кинотеатр в Иннополисе</title>
     <link rel="icon" type="image" href="images\logo2.png">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css\reset.css">
+    <link rel="stylesheet" href="css\main.css">
 </head>
 
 <body>
     <!--Первый блок-->
-<section>
-    <header style="background-color: darkgrey;">
-        <a href=https://innopolis.university target ="_blank"><img src="images\logo.png" alt="logo"/>
+<section class="header">
+    <header class="overlay">
+        <a href=https://innopolis.university target ="_blank"><img src="images\logo.png" alt="Изображение логотипа"/>
         </a>
-            <nav>
+            <nav class="header-title">
                 <ul>
                     <li><a href="#ORDER A TICKET">ЗАКАЗАТЬ БИЛЕТ</a></li>
                     <li><a href="#advantages">ПРЕИМУЩЕСТВА</a></li>
@@ -23,15 +23,17 @@
                     <li><a href="#contacts">КОНТАКТЫ</a></li>
                 </ul>
             </nav>
+            <div>
             <sub>Ваш город:</sub>
             <u>Москва</u> 
+        </div>
     </header>
 
     <div>
-        <img src="images\top_bg.jpg" alt="there is should be a picture of a cinema">
+        <img src="images\top_bg.jpg" alt="Изображение кинотеатра">
     </div>
 
-    <div>
+    <div class="overlay">
         <h1>
          Закажите билет в кино
         </h1>
@@ -64,14 +66,14 @@
 
 <section id="advantages">
     <div>
-         <h2 style="font-family:Roboto; font-size: 50pt;margin-left: 3em;">
+         <h2>
             <b>Почему мы?</b>
         </h2>
     </div>
 
     <div>
         <div>
-            <img src="images\b2_icon_1.jpg" alt="Picture Large screens">
+            <img src="images\b2_icon_1.jpg" alt="Изображение больших экранов">
            <h3>
                <b>Большие экраны</b>
             </h3>
@@ -80,7 +82,7 @@
         </div>
 
         <div>
-            <img src="images\b2_icon_2.jpg" alt="Picture Surround Sound">
+            <img src="images\b2_icon_2.jpg" alt="Изображение объемного звука">
             <h3>
             <b>Объемный звук</b>
             </h3>
@@ -90,7 +92,7 @@
         </div>
 
         <div>
-            <img src="images\b2_icon_3.jpg" alt="Picture Comfortable armchairs">
+            <img src="images\b2_icon_3.jpg" alt="Изображение удобных кресел">
            <h3>
               <b>Удобные кресла</b> 
             </h3> 
@@ -103,41 +105,57 @@
 
 <!--Третий экран-->
 <section id="ORDER A TICKET">
-    <table border="1px"cellpadding="30px"cellspaсing="0px">
-        <caption>Выберите фильм</caption>
+    <div class="container_movi-table"> 
+    <table class="movi-table">
+        <caption class="movi-table_header">Выберите фильм</caption>
         <thead>
-        <tr>
-            <th>Check</th>
-            <th>Time</th>
-            <th>Stuff that will happen</th>
-            <th>Жанр</th>
-        </tr>
+            <tr>
+                <th>Time</th>
+                <th>Stuff that will happen</th>
+                <th>Button</th>
+            </tr>
         </thead>
-        <tbody>
-        <tr><td>Check</td><td> 10:00</td><td><a href=https://www.kinopoisk.ru/film/838/Человек-паук target="_blank">Человек-паук</a></td><td>фантастика, боевик, приключения</td></tr>
-        <tr><td>Check</td><td> 12:00</td><td><a href=https://www.kinopoisk.ru/film/1122114/ target="_blank">Собачья жизнь 2</a></td><td>фэнтези, драма, комедия</td></tr>
-        <tr><td>Check</td><td> 14:00</td><td><a href=https://www.kinopoisk.ru/film/846824/ target="_blank">История игрушек 4</a></td><td>мультфильм, фэнтези, комедия</td></tr>
-        <tr><td>Check</td><td> 16:00</td><td><a href=https://www.kinopoisk.ru/film/693730/ target="_blank">Люди в черном: Интернэшнл</a></td><td>фантастика, боевик, комедия</td></tr>
+        <tbody class="caption_list_films_table">
+        <tr>
+            <td> 10am - 12pm</td>
+            <td><a href=https://www.kinopoisk.ru/film/838/Человек-паук target="_blank">Introduction and presentations about Envato</a></td>
+            <td>+</td>
+        </tr>
+        <tr>
+            <td> 12am - 02pm</td>
+            <td><a href=https://www.kinopoisk.ru/film/1122114/ target="_blank">Sessions by honorable guests and Speakers</a></td>
+            <td>+</td>
+        </tr>
+        <tr>
+            <td> 02am - 03pm</td>
+            <td><a href=https://www.kinopoisk.ru/film/846824/ target="_blank">Break and Mingle time with the authors</a></td>
+            <td>+</td>
+        </tr>
+        <tr>
+            <td> 03am - 05pm</td>
+            <td><a href=https://www.kinopoisk.ru/film/693730/ target="_blank">Portfolio Review, Rewards and Ending Presentation</a></td>
+            <td>+</td>
+        </tr>
         </tbody>
 
         <tfoot>
         </tfoot>	
     </table>
+</div>
+</section>
     <div>
  
         <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid eum facere obcaecati quam rem repellendus veritatis. Aliquam beatae,
-        <br/>
-        delectus dignissimos enim exercitationem mollitia nisi pariatur quaerat quam, qui quibusdam sunt!
+            Please keep in mind that the timings may differ according to the flow of the event. The even is actually day long and we do plan to finish it within our set time but it doesn’t have to be, if we all agree to hangour for some time more, what harm could it do? :)
         </p>
     </div>
-</section>
+
 <!--Конец третьего экрана-->
 
 <!--Четвертый экран-->
 <section>
-    <img src="images\b4_img.jpg" alt="picture of a gift">
-    <img src="images\b4_bg.jpg" alt="picture">
+    <img src="images\b4_img.jpg" alt="Изображение подарка">
+    <img src="images\b4_bg.jpg" alt="Изображение фона">
     <h2>
         <b>Подарок каждому!</b>
     </h2>
@@ -180,35 +198,35 @@
     <table style="margin-left:px; margin-right:0em;" cellspacing="100px">
         <tr>
             <td>
-                <img src="images\mov1.jpg" alt="spiderman movie pictures">
+                <img src="images\mov1.jpg" alt="Изображение фильма Человек-паук">
             </td>
             <td>
-                <img src="images\mov2.jpg" alt="picture of a movie of a dog's life">
+                <img src="images\mov2.jpg" alt="Изображение фильмя Собачья жизнь2">
             </td> 
             <td>
-                <img src="images\mov3.jpg" alt="men in black movie pictures">
+                <img src="images\mov3.jpg" alt="Изображение фильма Люди в черном">
             </td> 
         </tr>
         <tr>
             <td>
-            <img src="images\mov1.jpg" alt="spiderman movie pictures">
+            <img src="images\mov1.jpg" alt="Изображение фильма Человек-паук">
             </td>
             <td>
-                <img src="images\mov2.jpg" alt="picture of a movie of a dog's life">
+                <img src="images\mov2.jpg" alt="Изображение фильмя Собачья жизнь2">
             </td> 
             <td>
-            <img src="images\mov3.jpg" alt="men in black movie pictures">
+            <img src="images\mov3.jpg" alt="Изображение фильма Люди в черном">
             </td> 
         </tr>
         <tr>
             <td>
-            <img src="images\mov1.jpg" alt="spiderman movie pictures">
+            <img src="images\mov1.jpg" alt="Изображение фильма Человек-паук">
             </td>
             <td>
-            <img src="images\mov2.jpg" alt="picture of a movie of a dog's life">
+            <img src="images\mov2.jpg" alt="Изображение фильмя Собачья жизнь2">
             </td> 
             <td>
-            <img src="images\mov3.jpg" alt="men in black movie pictures">
+            <img src="images\mov3.jpg" alt="Изображение фильма Люди в черном">
             </td> 
         </tr>
     </table>
@@ -251,7 +269,15 @@
     </div>
 
 </section>
-<footer id="contacts">
+<footer id="contacts" >
+    <div class="footer_blogs">
+        <a href="https://ru-ru.facebook.com/" target="_blank"><img src="images\facebook.svg" alt="иконка facebook"></a>
+        <a href="https://twitter.com/" target="_blank"><img src="\images\twitter.svg" alt="иконка twitter"></a>
+        <a href="https://ru.linkedin.com/" target="_blank"><img src="\images\linkedin.png" alt="иконка linkedin"></a>
+        <a href="https://myaccount.google.com/profile" target="_blank"><img src="\images\google plus .png" alt="иконка google plus"></a>
+        <a href="https://www.tumblr.com/" target="_blank"><img src="\images\tumblr.png" alt="иконка tumblr"></a>
+    </div>
+    <div>
     <!--Форма ввода--> 
     <form action="order.php" method="GET">
         <input type="text" placeholder="Имя*" name="" id="" required>
@@ -293,11 +319,11 @@
         <!--Радио кнопка-->
         <br>
         <label for="radioButton1">Выбор1</label>
-        <input type="radio" id="radioButton1" name="choise" value="radio1">
+        <input type="radio" id="radioButton1" name="choice" value="radio1">
         </input>
         <br>
         <label for="radioButton2">Выбор2</label>
-        <input type="radio" id="radioButton2" name="choise" value="radio2">
+        <input type="radio" id="radioButton2" name="choice" value="radio2">
         </input>
         <br>
         <!--Поля для ввода текста-->
@@ -313,6 +339,7 @@
             Заказать
         </button>
     </form>
+</div>
   </footer>
 
 

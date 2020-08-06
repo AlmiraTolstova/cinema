@@ -1,0 +1,111 @@
+.container {
+    max-width: 1030px;
+    margin: a auto;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+@font-face {
+    font: 'Roboto';
+    src: url('../fonts/Roboto-Regular.ttf') format("trutype");
+    src: url('../fonts/RRoboto-Thin.ttf') format("trutype");
+    src: url('../fonts/Roboto-Medium.ttf') format("trutype");
+
+    font-weight: 700
+}
+
+.header {
+    background-image: url('images\top_bg.jpg');
+    background-position: top;
+    text-align: center;
+}
+
+.header-title {
+    font-size: 14px;
+    color: white;
+    text-transform: uppercase;
+    margin: auto;
+    position: absolute;
+}
+
+.overlay {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.container_movi-table {
+    max-width: 1030px;
+    margin: 0 auto;
+  
+}
+
+.movi-table {
+    border-radius: 15px;
+font-family: "Roboto", Sans-Serif;
+border-collapse: collapse;
+text-align: center;
+border-radius: 2px;
+border-spacing: 0;
+}
+
+.movi-table_header {
+    font-size: 50px;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 80px;
+}
+
+
+
+.movi-table thead{
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    background-color:#a3cc40;
+    border-radius: 8px
+}
+
+.movi-table tbody {
+    font-size: 22px;
+    font-weight: normal;
+    color: white;
+    text-align: center;
+    background-color: #4b4d4f;
+}
+
+.movi-table tbody tr:nth-child(odd) {
+    background-color: #373737;
+}
+
+
+
+.movi-table a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+
+.top_back_background {
+    min-height: 100vh;
+    background: url("../Images/top_bg.jpg") no-repeat top center / cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer {
+
+
+    display: flex;
+}
+
+.footer_blogs {
+    height: 220px;
+    background-color: #90d23d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
