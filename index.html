@@ -11,35 +11,35 @@
 
 <body>
     <!--Первый блок-->
-<section class="header">
-    <header class="overlay">
-        <a href=https://innopolis.university target ="_blank"><img src="images\logo.png" alt="Изображение логотипа"/>
+<div class="block1">
+    <header class="block1_header">
+            <a href=https://innopolis.university target ="_blank"><img src="images\logo.png" alt="Изображение логотипа"/>
         </a>
-            <nav class="header-title">
-                <ul>
-                    <li><a href="#ORDER A TICKET">ЗАКАЗАТЬ БИЛЕТ</a></li>
-                    <li><a href="#advantages">ПРЕИМУЩЕСТВА</a></li>
-                    <li><a href="#Fims">ФИЛЬМЫ</a></li>
-                    <li><a href="#contacts">КОНТАКТЫ</a></li>
-                </ul>
-            </nav>
+        <nav class="block1_nav">
+            <ul>
+                 <li><a href="#ORDER A TICKET">ЗАКАЗАТЬ БИЛЕТ</a></li>
+                 <li><a href="#advantages">ПРЕИМУЩЕСТВА</a></li>
+                 <li><a href="#Fims">ФИЛЬМЫ</a></li>
+                 <li><a href="#contacts">КОНТАКТЫ</a></li>
+             </ul>
+        </nav>
             <div>
-            <sub>Ваш город:</sub>
-            <u>Москва</u> 
-        </div>
+                <sub>Ваш город:</sub>
+                <u>Москва</u> 
+            </div>
     </header>
 
-    <div>
-        <img src="images\top_bg.jpg" alt="Изображение кинотеатра">
-    </div>
+    <!--<div class="block1_background">
+        <img width = 1366px src="images\top_bg.jpg" alt="Изображение кинотеатра">
+    </div>-->
 
     <div class="overlay">
         <h1>
          Закажите билет в кино
         </h1>
         <p>Всем покупателям подарок!</p>
-    </div>
-</section>    
+    </div>-->
+</div>    
 <!--Конец первого экрана-->
 
 <!--Второй экран-->
@@ -105,36 +105,36 @@
 
 <!--Третий экран-->
 <section id="ORDER A TICKET">
-    <div class="container_movi-table"> 
-    <table class="movi-table">
-        <caption class="movi-table_header">Выберите фильм</caption>
+    <div class="movi-list"> 
+        <div class="movi-list__table_header">Выберите фильм</div>
+    <table class="movi-list__table"> 
         <thead>
             <tr>
                 <th>Time</th>
                 <th>Stuff that will happen</th>
-                <th>Button</th>
+                <th></th>
             </tr>
         </thead>
-        <tbody class="caption_list_films_table">
+        <tbody class="movi-list__table_tbody">
         <tr>
-            <td> 10am - 12pm</td>
+            <td class="movi-list__table_tbody_time"> 10am - 12pm</td>
             <td><a href=https://www.kinopoisk.ru/film/838/Человек-паук target="_blank">Introduction and presentations about Envato</a></td>
-            <td>+</td>
+            <td><img src="images\button-plus.svg" alt="Кнопка"></td>
         </tr>
         <tr>
-            <td> 12am - 02pm</td>
+            <td class="movi-list__table_tbody_time"> 12am - 02pm</td>
             <td><a href=https://www.kinopoisk.ru/film/1122114/ target="_blank">Sessions by honorable guests and Speakers</a></td>
-            <td>+</td>
+            <td><img src="images\button-plus.svg" alt="Кнопка"></td>
         </tr>
         <tr>
-            <td> 02am - 03pm</td>
+            <td class="movi-list__table_tbody_time"> 02am - 03pm</td>
             <td><a href=https://www.kinopoisk.ru/film/846824/ target="_blank">Break and Mingle time with the authors</a></td>
-            <td>+</td>
+            <td><img src="images\button-plus.svg" alt="Кнопка"></td>
         </tr>
         <tr>
-            <td> 03am - 05pm</td>
+            <td class="movi-list__table_tbody_time"> 03am - 05pm</td>
             <td><a href=https://www.kinopoisk.ru/film/693730/ target="_blank">Portfolio Review, Rewards and Ending Presentation</a></td>
-            <td>+</td>
+            <td><img src="images\button-plus.svg" alt="Кнопка"></td>
         </tr>
         </tbody>
 
@@ -155,7 +155,7 @@
 <!--Четвертый экран-->
 <section>
     <img src="images\b4_img.jpg" alt="Изображение подарка">
-    <img src="images\b4_bg.jpg" alt="Изображение фона">
+    <img width = 1366px src="images\b4_bg.jpg" alt="Изображение фона">
     <h2>
         <b>Подарок каждому!</b>
     </h2>
@@ -335,9 +335,9 @@
         <label for="check">Я согласен на обработку персональных данных</label>
         <br>
         <input type="file">
-        <button type="submit">
+       <form><button type="submit">
             Заказать
-        </button>
+        </button></form>
     </form>
 </div>
   </footer>
