@@ -20,18 +20,13 @@ body {
     font-weight: 700
 }
 */
+
 .block1{
     background-image:url("../images/top_bg.jpg");
     background-color: #751f1f;
     width: 1366px;
     height: 777px;
-
 }
-
-.block1_nav{
-
-}
-
 
 .movi-list {
     max-width: 1030px;
@@ -56,58 +51,74 @@ body {
     overflow: hidden;
     width: 100%;
     padding: 10em;
-   
 }
 
-.movi-list__table thead {
+/**Таблица. Заголовочная строка.**/
+.movi-list__table_thead {
     font-size: 30px;
     color: white;
     font-weight: bold;
     background-color: #a3cc40;
 }
 
+.movi-list__table_thead_th1{
+    width: 227px;
+}
+
+.movi-list__table_thead_th2{
+    width: 673px;
+}
+
+
+/**Модификаторы**/
+.left{
+    text-align: left;
+}
+
+.center{
+    text-align: center;
+}
+
+.row-height{
+    height: 75px;
+}
+
+.indent70{
+    text-indent: 70px;
+}
+
+.indent38{
+    text-indent: 0px;
+}
+
+/**Таблица. Тело.**/
 .movi-list__table_tbody {
     font-size: 22px;
     font-weight: normal;
     color: white;
-    text-align: center;
-    background-color: #4b4d4f;
-    
 }
 
-.movi-list__table tr{
-    height: 75px;
-}
-
-.movi-list tbody tr:nth-child(odd) {
+.movi-list__table_tbody_tr1{
     background-color: #373737;
 }
 
-.movi-list__table tbody td:nth-child(2n){
-    text-align: left;
+.movi-list__table_tbody_tr2{
+    background-color: #6c6c6c;
 }
 
-.movi-list__table thead th:nth-child(1){
-    padding-left: 81px;
-    text-align: left;
-}
-.movi-list__table thead th:nth-child(2n){
-    padding-left: 100px;
-    text-align: left;
+.movi-list__table_tbody_tr3{
+    background-color:#373737;
 }
 
-.movi-list__table tbody td img{
-padding-right: 40px;
+.movi-list__table_tbody_tr4{
+    background-color:#4b4d4f;
 }
-.movi-list__table_tbody td a {
+
+.movi-list a {
     color: rgb(255, 255, 255);
-    text-decoration: none;
-    padding-left: 100px;
-    text-align: left;
+     text-decoration: none;
 }
-.movi-list__table_tbody_time{
-   padding-left: 33px;
-    }
+
 .footer {
     display: flex;
 }
