@@ -73,6 +73,11 @@ h2 {
     color: black;
 }
 
+h3{
+    font-size: 1.75rem;
+    font-weight: 800;
+}
+
 p {
     font-size: 0.7rem;
     font-weight: 300;
@@ -159,18 +164,70 @@ p {
     padding: 10px
 }
 
+/*Наложение карточки*/
+
+.card{
+    position: absolute;
+    left: 35.5rem;
+    top:29.75rem;
+    width: 24rem;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 1px 2px 0px rgba(35, 31, 32, 0.65);
+    padding: 1.6rem 1.5rem; 
+    z-index: 165;
+}
+.card__header{
+    font-size: 2rem;
+    padding-bottom: 1.65rem;
+}
+
 /*Второй экран*/
 
 .block2 {
-    max-width: 51.5rem;
+    margin: auto;
+    width: 51.5rem;
     margin-top: 3.8rem;
+    overflow: hidden;
 
 }
 
+.block2__adv{
+    width: 51.5rem;
+    text-align: center;
+    padding-top: 5.3rem;
+    
+    
+}
+
+.block2__adv-inline{
+    float: left;
+    width: 33.33%;  
+    padding: 0rem 0.75rem;
+   
+}
+
+.block2__adv-inline-img{
+    height: 10.5rem;
+    position: relative;
+    vertical-align: middle;
+}
+.block2__adv-inline-img img{
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+
+}
 /*Третий экран*/
 .block3 {
+    display: block;
     margin: auto;
     margin-top: 6.3rem;
+    width: 51.5rem;
 
 }
 
@@ -180,10 +237,10 @@ p {
 }
 
 .movi-list__table {
-    max-width: 51.5rem;
+  
     margin: auto;
     font-family: "Roboto", Sans-Serif;
-    border-radius: 15px;
+    border-radius: 0.75rem;
     border-collapse: collapse;
     overflow: hidden;
     color: white;
@@ -197,7 +254,7 @@ p {
 }
 
 .movi-list__table_thead_th1 {
-    padding: 26px 79px 26px 82px;
+    padding: 1.3rem 3.95rem 1.3rem 4.1rem;
 }
 
 .movi-list__table_thead_th2 {
@@ -256,13 +313,91 @@ p {
 /*Пятый экран*/
 
 .block5 {
+    /*max-width: 51.5rem; Nick*/
+    border:1px solid rgb(35, 31, 32);
+    width: 51.5rem;
     margin: auto;
     margin-top: 4.6rem;
+   
+}
+
+.block5__text-p{
+    margin-top: 2.45rem;
 }
 
 .block5__table {
+   
+    border-collapse: collapse;
+    margin-top: 4rem;
     margin: auto;
-    min-width: 48.5rem;
+}
+
+.block5__table td{
+    border: 1px solid #373737;
+}
+
+.relative{
+    position: relative; 
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.block5__movie1{
+    padding: 1rem;
+    position: relative;
+}
+
+.block5__description{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(144, 210, 61, 0.5);
+    padding: 24px;
+}
+
+.block5__bg img{
+    display: block;
+}
+
+.block5__text-header{
+    color: white;
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 0.25rem;
+}
+
+.block5__icons{
+    position: absolute;
+    left: 24px;
+    bottom: 24px;
+}
+
+.block5__link{
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 100%;
+    background: white;
+    color: rgb(144, 210, 61, .5);
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.25);
+    position: relative;
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+.block5__text{
+    font-size: 18px;
+    font-weight: 500;
+    color:white;
+}
+
+.block5__white-line{
+    width: 84px;
+    height: 6px;
+    background-color: white;
+    margin-bottom: 0.5rem;
 }
 
 /*Подвал*/
@@ -326,6 +461,9 @@ p {
     background-color: lawngreen;
 }
 
+.icon{
+    
+}
 /**Сетка макета*/
 
 /** Медиа – правила */

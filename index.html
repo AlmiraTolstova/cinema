@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css\reset.css">
     <link rel="stylesheet" href="css\main.css">
     <link rel="stylesheet" href="fonts\stylesheet.css">
+    <link rel="stylesheet" href="fonts\icons.css">
     <link rel="stylesheet" href="js\plagins\owlcarusel\css\owl.carousel.min.css">
     <link rel="stylesheet" href="js\plagins\owlcarusel\css\owl.theme.default.min.css">
 
@@ -65,26 +66,27 @@
     <!--Конец первого экрана-->
 
     <!--Наложение карточки-->
-
-    <blockquote>
-        <h2>
-            <b>Добро пожаловать!</b>
-        </h2>
-        <p>
-            Cumque dolorem eum harum laudantium libero molestias saepe soluta?
-            <br />
-            Facere minima optio perferendis quibusdam quis reprehenderit, saepe!
-            <br />
-            Debitis enim optio saepe voluptatibus.
-            <br />
-            <br />
-            Cumque dolorem eum harum laudantium libero molestias saepe soluta?
-            <br />
-            Facere minima optio perferendis quibusdam quis reprehenderit, saepe!
-            <br />
-            Debitis enim optio saepe voluptatibus.
-        </p>
-    </blockquote>
+    <div class="card">
+        <blockquote>
+            <h2 class="card__header">
+                <b>Добро пожаловать!</b>
+            </h2>
+            <p>
+                Cumque dolorem eum harum laudantium libero molestias saepe soluta?
+                <br />
+                Facere minima optio perferendis quibusdam quis reprehenderit, saepe!
+                <br />
+                Debitis enim optio saepe voluptatibus.
+                <br />
+                <br />
+                Cumque dolorem eum harum laudantium libero molestias saepe soluta?
+                <br />
+                Facere minima optio perferendis quibusdam quis reprehenderit, saepe!
+                <br />
+                Debitis enim optio saepe voluptatibus.
+            </p>
+        </blockquote>
+    </div>
 
     <!--Второй экран-->
 
@@ -96,9 +98,11 @@
                 </h2>
             </div>
 
-            <div>
-                <div>
-                    <img src="images\b2_icon_1.jpg" alt="Изображение больших экранов">
+            <div class="block2__adv">
+                <div class="block2__adv-inline">
+                    <div class="block2__adv-inline-img">
+                        <img src="images\b2_icon_1.jpg" alt="Изображение больших экранов">
+                    </div>
                     <h3>
                         <b>Большие экраны</b>
                     </h3>
@@ -108,8 +112,10 @@
                         temporibus veritatis vero voluptates. </p>
                 </div>
 
-                <div>
-                    <img src="images\b2_icon_2.jpg" alt="Изображение объемного звука">
+                <div class="block2__adv-inline">
+                    <div class="block2__adv-inline-img">
+                        <img src="images\b2_icon_2.jpg" alt="Изображение объемного звука">
+                    </div>
                     <h3>
                         <b>Объемный звук</b>
                     </h3>
@@ -118,8 +124,10 @@
                     </p>
                 </div>
 
-                <div>
-                    <img src="images\b2_icon_3.jpg" alt="Изображение удобных кресел">
+                <div class="block2__adv-inline">
+                    <div class="block2__adv-inline-img">
+                        <img src="images\b2_icon_3.jpg" alt="Изображение удобных кресел">
+                    </div>
                     <h3>
                         <b>Удобные кресла</b>
                     </h3>
@@ -239,53 +247,133 @@
 
     <!--Пятый экран-->
     <div class="block5">
-        <section id="Fims">
-            <blockquote>
-                <h2>
+        <div class="container" id="Fims">
+           
+                <h2 class="block5__h2">
                     <b>Фильмы</b>
                 </h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci alias, animi, commodi eius
+                <p class="block5__text-p"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci alias, animi, commodi eius
                     ipsum,
                     <br />
                     laudantium neque nihil omnis perferendis sed sequi tempore! Ad ea esse ex inventore repudiandae,
                     suscipit!
                 </p>
-            </blockquote>
-            <div>
+            
+            
                 <table class="block5__table">
                     <tr>
-                        <td>
-                            <img src="images\mov1.jpg" alt="Изображение фильма Человек-паук">
+                        <td class="block5__movie1">
+                            <div class="relative">
+                                <div class="block5__bg">
+                                    <img src="images\mov1.jpg" alt="Изображение фильма Человек-паук">
+                                </div>
+                                <div class="block5__description">
+                                    <div class="block5__text-header">Человек-паук</div>
+                                    <div class="block5__white-line"></div>
+                                    <div class="block5__text">Lorem ipsum dolor sit amet, consectetur</div>
+                                    <div class="block5__icons">
+                                        <a href="#" class="block5__link" target="_blank"><i class="icon icon-twitter" title="icon-twitter"></i></a>
+                                        <a href="#" class="block5__link" target="_blank"><i class="icon icon-facebook" title="icon-facebook"></i></a>
+                                        <a href="#" class="block5__link" target="_blank"><i class="icon icon-camera" title="icon-camera"></i></a>
+                                    </div>
+                            </div>
+                            </div>
                         </td>
-                        <td>
-                            <img src="images\mov2.jpg" alt="Изображение фильмя Собачья жизнь2">
+                        <td class="block5__movie1">
+                            <div class="relative">
+                                <div class="block5__bg">
+                                    <img src="images\mov2.jpg" alt="Изображение фильмя Собачья жизнь2">
+                                </div>
+                                <div class="block5__description">
+                                    <div class="block5__text-header">Собачья жизнь 2</div>
+                                    <div class="block5__white-line"></div>
+                                    <div class="block5__text">Lorem ipsum dolor sit amet, consectetur</div>
+                                    <div class="block5__icons">
+                                        <a href="#" class="block5__link" target="_blank"><i class="icon icon-twitter" title="icon-twitter"></i></a>
+                                        <a href="#" class="block5__link" target="_blank"><i class="icon icon-facebook" title="icon-facebook"></i></a>
+                                        <a href="#" class="block5__link" target="_blank"><i class="icon icon-camera" title="icon-camera"></i></a>
+                                    </div>
+                                </div>
+                            </div>
                         </td>
-                        <td>
-                            <img src="images\mov3.jpg" alt="Изображение фильма Люди в черном">
+                        <td class="block5__movie1">
+                            <div class="relative">
+                                <div class="block5__bg">
+                                    <img src="images\mov3.jpg" alt="Изображение фильма Люди в черном">
+                                </div>
+                                <div class="block5__description">
+                                    <div class="block5__text-header">Люди в черном: Интернэшнл</div>
+                                    <div class="block5__white-line"></div>
+                                    <div class="block5__text">Lorem ipsum dolor sit amet, consectetur</div>
+                                    <div class="block5__icons">
+                                        <a href="#" class="block5__link" target="_blank"><i class="icon icon-twitter" title="icon-twitter"></i></a>
+                                        <a href="#" class="block5__link" target="_blank"><i class="icon icon-facebook" title="icon-facebook"></i></a>
+                                        <a href="#" class="block5__link" target="_blank"><i class="icon icon-camera" title="icon-camera"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    
+                    <!--
+                    <tr>
+                        <td class="block5__movie1">
+                            <div class="block5__bg">
+                                <img src="images\mov1.jpg" alt="Изображение фильма Человек-паук">
+                            </div>
+                            <div class="block5__description">
+                                <h3>Человек-паук</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur</p>
+                            </div>
+                        </td>
+                        <td class="block5__movie1">
+                            <div class="block5__bg">
+                                <img src="images\mov2.jpg" alt="Изображение фильмя Собачья жизнь2">
+                            </div>
+                            <div class="block5__description">
+                                <h3>Собачья жизнь 2</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur</p>
+                            </div>
+                        </td>
+                        <td class="block5__movie1">
+                            <div class="block5__bg">
+                                <img src="images\mov3.jpg" alt="Изображение фильма Люди в черном">
+                            </div>
+                            <div class="block5__description">
+                                <h3>Люди в черном: Интернэшнл</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur</p>
+                            </div>
                         </td>
                     </tr>
                     <tr>
-                        <td>
-                            <img src="images\mov1.jpg" alt="Изображение фильма Человек-паук">
+                        <td class="block5__movie1">
+                            <div class="block5__bg">
+                                <img src="images\mov1.jpg" alt="Изображение фильма Человек-паук">
+                            </div>
+                            <div class="block5__description">
+                                <h3>Человек-паук</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur</p>
+                            </div>
                         </td>
-                        <td>
-                            <img src="images\mov2.jpg" alt="Изображение фильмя Собачья жизнь2">
+                        <td class="block5__movie1">
+                            <div class="block5__bg">
+                                <img src="images\mov2.jpg" alt="Изображение фильмя Собачья жизнь2">
+                            </div>
+                            <div class="block5__description">
+                                <h3>Собачья жизнь 2</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur</p>
+                            </div>
                         </td>
-                        <td>
-                            <img src="images\mov3.jpg" alt="Изображение фильма Люди в черном">
+                        <td class="block5__movie1">
+                            <div class="block5__bg">
+                                <img src="images\mov3.jpg" alt="Изображение фильма Люди в черном">
+                            </div>
+                            <div class="block5__description">
+                                <h3>Люди в черном: Интернэшнл</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur</p>
+                            </div>
                         </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="images\mov1.jpg" alt="Изображение фильма Человек-паук">
-                        </td>
-                        <td>
-                            <img src="images\mov2.jpg" alt="Изображение фильмя Собачья жизнь2">
-                        </td>
-                        <td>
-                            <img src="images\mov3.jpg" alt="Изображение фильма Люди в черном">
-                        </td>
-                    </tr>
+                    </tr>-->
                 </table>
             </div>
 
@@ -302,46 +390,15 @@
                 Lorem ipsum dolor sit amet, consectetur
             </div>
 
-            <div>
-                <p> Шаг 9, 10, 11. Атрибуты нумерованных списков</p>
-                <ul>
-                    <li>
-                        1
-                    </li>
-                    <li>
-                        2
-                    </li>
-                    <ol type="I" reversed start="10">
-                        <li>
-                            one
-                        </li>
-                        <li>
-                            two
-                        </li>
-                    </ol>
-                    <li>
-                        3
-                    </li>
-                </ul>
-            </div>
-            <!--<div class="owl-carousel">
-            <div class="carusel"> <img src="https://img.icons8.com/pastel-glyph/64/000000/cat--v2.png"/> </div>
-            <div class="carusel"> <img src="https://img.icons8.com/dusk/64/000000/cat.png"/> </div>
-            <div class="carusel"> <img src="https://img.icons8.com/cute-clipart/64/000000/pixel-cat.png"/> </div>
-            <div class="carusel"> <img src="https://img.icons8.com/emoji/48/000000/cat-face--v1.png"/> </div>
-            <div class="carusel"> <img src="https://img.icons8.com/color/48/000000/cat-profile.png"/> </div>
-            <div class="carusel"> <img src="https://img.icons8.com/emoji/48/000000/kissing-cat.png"/> </div>
-            <div class="carusel"> <img src="https://img.icons8.com/nolan/64/cat-footprint.png"/> </div>
-        </div>-->
-        </section>
+  
+        </div>
     </div>
- <!--Конец пятого экрана-->
+    <!--Конец пятого экрана-->
 
-  <!--Подвал-->
+    <!--Подвал-->
     <footer id="contacts">
         <div class="footer_blogs">
-            <a href="https://ru-ru.facebook.com/" target="_blank"><img src="images\facebook.svg"
-                    alt="иконка facebook"></a>
+            <a href="https://ru-ru.facebook.com/" target="_blank"><img src="images\facebook.svg"alt="иконка facebook"></a>
             <a href="https://twitter.com/" target="_blank"><img src="\images\twitter.svg" alt="иконка twitter"></a>
             <a href="https://ru.linkedin.com/" target="_blank"><img src="\images\linkedin.png"
                     alt="иконка linkedin"></a>
