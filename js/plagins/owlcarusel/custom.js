@@ -4,3 +4,4 @@ form.onsubmit=function(event){
     const name = document.getElementById('select');
     console.log(name);
 }
+
