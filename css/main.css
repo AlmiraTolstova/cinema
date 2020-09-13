@@ -1,8 +1,9 @@
 /*Начальная инициализация*/
 html {
     box-sizing: border-box;
-    /*font-size: 20px;*/
-    font-size: 1.4vw;
+    /* font-size: 20px; */
+    font-size: 1.0417vw;
+   
 }
 
 *,
@@ -24,8 +25,8 @@ select {
 
 body {
     font-family: 'Roboto', sans-serif;
-    min-width: 360px;
-    max-width: 1920px;
+    min-width: 18rem;
+    max-width: 96rem;
     margin-left: auto;
     margin-right: auto;
     -webkit-text-size-adjust: 100%;
@@ -40,32 +41,6 @@ li {
     list-style: none;
 
 }
-
-/**
-@font-face {
-    font: 'Roboto';
-    src: url('../fonts/Roboto-Regular.ttf') format("trutype");
-    src: url('../fonts/RRoboto-Thin.ttf') format("trutype");
-    src: url('../fonts/Roboto-Medium.ttf') format("trutype");
-
-    font-weight: 700
-}
-*/
-
-/*Код  стилизации  форм*/
-/**input[type="file"]:hover, button:active {
-    border:none;
-}
-
-button {
-    display: inline-block;
-    padding: 16px 30px;
-    font-size: 18px;
-    color: #fff;
-    background-color: rgb(144, 210, 61);
-    border-radius: 15px;
-} 
-*/
 
 /*Общие стили*/
 h2 {
@@ -110,6 +85,7 @@ p {
 }
 
 .block1__logo {
+    width: 9.5rem;
     float: left;
 }
 
@@ -124,9 +100,8 @@ p {
 .block1__nav {
     float: right;
     width: auto;
-    margin-left: 4.5rem;
     line-height: 100%;
-    padding: 0.5rem;
+    padding-top: 0.6rem;
     float: right;
 }
 
@@ -135,7 +110,7 @@ p {
 }
 
 .block1__nav li+li {
-    margin-left: 2rem;
+    margin-left: 1.5rem;
 }
 
 .block1__nav a {
@@ -144,14 +119,14 @@ p {
     text-transform: uppercase;
     font-weight: 300;
     transition: 0.2s;
-    letter-spacing: -1px;
+    letter-spacing: 0.5px;
 
 }
 
 .block1__nav a:hover {
     color: #90d23d;
     cursor: pointer;
-    border-bottom: 1px solid;
+    border-bottom: 0,05rem solid;
 }
 
 .block1__logo+.block1__navigation {
@@ -160,7 +135,7 @@ p {
 
 .block1__promo {
     color: white;
-    margin-top: 11rem;
+    margin-top: 10.5rem;
     text-align: center;
 
 }
@@ -171,15 +146,15 @@ p {
     text-align: center;
     font-size: 4rem;
     font-weight: 200;
-    letter-spacing: 0.15rem;
+    letter-spacing: 0.02rem;
 }
 
 .block1__promo_p {
     text-align: center;
     font-size: 2.5rem;
     font-weight: 400;
-    letter-spacing: 0.1rem;
-    padding: 1rem
+    letter-spacing: 0.02rem;
+    padding: 0.5rem
 }
 
 
@@ -187,28 +162,40 @@ p {
 /*Наложение карточки*/
 
 .card {
+    max-width: 51.5rem;
     position: absolute;
-    left: 35.5rem;
-    top: 33.5rem;
+    left: 47.7rem;
+    top: 32rem;
     width: 26rem;
     height: 13.3rem;
     background-color: rgb(255, 255, 255);
-    box-shadow: 0px 1px 2px 0px rgba(35, 31, 32, 0.65);
-    padding: 1.6rem 1.5rem;
+    box-shadow: 0.05rem 0.05rem 0.1rem 0rem rgba(35, 31, 32, 0.65);
+    padding: 1.6rem 3.2rem 1.2rem 1.5rem;
     z-index: 165;
+}
+
+.card_container{
+    position: relative;
 }
 
 .card__header {
     font-size: 2rem;
-    padding-bottom: 1.8rem;
+    padding-bottom: 2.02rem;
+    
 }
+
+.card p{
+    letter-spacing: 0.01rem;
+
+}
+
 
 /*Второй экран*/
 
 .block2 {
     margin: auto;
     max-width: 51.5rem;
-    margin-top: 3.8rem;
+    margin-top: 2.4rem;
     overflow: hidden;
 }
 
@@ -220,7 +207,7 @@ p {
 .block2__adv {
     width: 51.5rem;
     text-align: center;
-    padding-top: 9.8rem;
+    padding-top: 8.8rem;
     vertical-align: middle;
 }
 
@@ -231,7 +218,6 @@ p {
 }
 
 .block2__adv-inline-img {
-    /* border: 1px solid black; */
     height: 10.5rem;
     position: relative;
     vertical-align: middle;
@@ -273,7 +259,7 @@ p {
 
 .movi-list__header {
     text-align: center;
-    margin: 6.8rem auto 4.3rem;
+    margin: -0.5rem auto 4rem;
 }
 
 .movi-list__table {
@@ -294,11 +280,20 @@ p {
 }
 
 .movi-list__table_thead_th1 {
-    padding: 1.3rem 3.95rem 1.3rem 4.1rem;
+    padding: 1.1rem 2.8rem 1.1rem 4.1rem;
 }
 
 .movi-list__table_thead_th2 {
-    padding: 1.3rem 15.7rem 1.3rem 3.3rem;
+    padding: 1.1rem 15.9rem 1.1rem 3.7rem;
+}
+
+.movi-list__button{
+    width: 1.3rem;
+    padding-left: 0.2rem;
+}
+
+.movi-list__button-plus{
+    width: 1.7rem;
 }
 
 /**Таблица. Тело.**/
@@ -337,7 +332,7 @@ p {
 }
 
 .movi-list__text {
-    margin-top: 2.4rem;
+    margin-top: 2rem;
 }
 
 /*Четвертый экран*/
@@ -360,8 +355,8 @@ p {
     position: absolute;
     width: 16.4rem;
     border-radius: 50%;
-    box-shadow: 10.5px 18.187px 12px 0px rgba(35, 31, 32, 0.55);
-    margin-top: -2.5rem;
+    box-shadow: 0.525rem 0.90935rem 0.6rem 0rem rgba(35, 31, 32, 0.55);
+    margin-top: -2.9rem;
 }
 
 .block4::before {
@@ -387,16 +382,17 @@ p {
     width: 33.5rem;
     text-align: right;
     float: right;
-    margin-top: 8.9rem;
-    line-height: 1rem;
+    margin-top: 7.5rem;
+ 
 }
 
 .block4__paragraf {
-    margin-top: 3.8rem;
+    margin-top: 2.9rem;
+    line-height: 0.85rem;
 }
 
 .block4__button {
-    margin-top: 1rem;
+    margin-top: 1.7rem;
 }
 
 .block4__button-style {
@@ -423,45 +419,40 @@ p {
 
 .order-form{
     background:rgb(255,255,255);
-    border-radius: 14px;
+    border-radius: 0.7rem;
     box-shadow: 1px 0px 5px rgb(125,125,125);
     box-sizing: border-box;
-    height: 360px;
-    width: 320px;
-    padding: 20px;
-    margin: 150px auto;
+    height: 18rem;
+    width: 16rem;
+    padding: 1rem;
+    margin: 7.5rem auto;
     position: relative;
 }
 
 .close{
     display: block;
     position: absolute;
-    right: 20px;
+    right: 1rem;
     cursor: pointer;
    
 }
 /*Пятый экран*/
 
 .block5 {
-    /* border:1px solid rgb(35, 31, 32); */
     width: 51.5rem;
     margin: auto;
-    margin-top: 4.2rem;
+    margin-top: 2.2rem;
 }
 
 .block5__text-p {
-    margin-top: 2.45rem;
+    margin-top: 2.15rem;
     line-height: 0.7rem;
 }
 
 .block5__table {
     border-collapse: collapse;
     padding-top: 4rem;
-    margin: 4rem auto 0;
-}
-
-.block5__table td {
-    /* border: 1px solid #373737; */
+    margin: 3rem auto 0;
 }
 
 .block5__relative {
@@ -538,26 +529,33 @@ p {
 
 /* Интерактивная карта */
 .block6__map {
-    margin-top: 2.5rem;
+    margin-top: 4.4rem;
 }
 
 /*Подвал*/
 
 .footer {
-    display: flex;
+    /* display: flex; */
+    position: absolute;
 }
 
 .footer__container {
+    margin: auto;
+    width: 100%;
     height: 11.1rem;
     background-color: #90d23d;
-    display: flex;
+    /* display: flex; */
     align-items: center;
     justify-content: center;
+    
 }
 
 .footer_blogs {
+    width: 10rem;
     display: inline-block;
+    margin: 3rem 45.35% 0rem;
 }
+
 
 .footer__icons {
     display: inline-block;
@@ -580,6 +578,13 @@ p {
     display: inline;
     padding-left: 0.75rem;
     padding-right: 0.75rem;
+}
+
+.footer_paragraf{
+    font-size: 0.9rem;
+    /* width: 18.6rem; */
+    text-align: center;
+    margin: 1.9rem auto 0rem;
 }
 
 /**Модификаторы**/
@@ -629,11 +634,11 @@ p {
 
 }
 
-.carusel {
+/* .carusel {
     width: 100px;
     height: 100px;
     background-color: lawngreen;
-}
+} */
 
 .inline-blocks {
     display: inline-block;

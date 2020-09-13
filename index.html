@@ -68,23 +68,24 @@
     <!--Наложение карточки-->
     <div class="card">
         <blockquote>
-            <h2 class="card__header">
-                <b>Добро пожаловать!</b>
-            </h2>
-            <p>
-                Cumque dolorem eum harum laudantium libero molestias saepe soluta?
-                <br />
-                Facere minima optio perferendis quibusdam quis reprehenderit, saepe!
-                <br />
-                Debitis enim optio saepe voluptatibus.
-                <br />
-                <br />
-                Cumque dolorem eum harum laudantium libero molestias saepe soluta?
-                <br />
-                Facere minima optio perferendis quibusdam quis reprehenderit, saepe!
-                <br />
-                Debitis enim optio saepe voluptatibus.
-            </p>
+            <div class="card_container">
+                <h2 class="card__header">
+                    <b>Добро пожаловать!</b>
+                </h2>
+                <div class="card_p">
+                    <p>
+                        Cumque dolorem eum harum laudantium libero molestias saepe 
+                        soluta? Facere minima optio perferendis quibusdam quis 
+                        reprehenderit, saepe! Debitis enim optio saepe voluptatibus.
+                    </p>
+                     <br>
+                    <p>
+                        Cumque dolorem eum harum laudantium libero molestias saepe 
+                        soluta? Facere minima optio perferendis quibusdam quis 
+                        reprehenderit, saepe! Debitis enim optio saepe voluptatibus.
+                    </p>
+                </div>
+            </div>
         </blockquote>
     </div>
 
@@ -148,11 +149,11 @@
         <div class="movi-list">
             <h2 class="movi-list__header">Выберите фильм</h2>
             <table class="movi-list__table">
-                <thead class="movi-list__table_thead ">
+                <thead class="movi-list__table_thead">
                     <tr class="row-height">
-                        <th class="movi-list__table_thead_th1">Time<button><img src="images/button-up.svg"
+                        <th class="movi-list__table_thead_th1">Time<button><img class="movi-list__button" src="images/button-up.svg"
                                     alt="button-up"></button></img></th>
-                        <th class="movi-list__table_thead_th2">Stuff that will happen <button><img
+                        <th class="movi-list__table_thead_th2">Stuff that will happen <button><img class="movi-list__button"
                                     src="images/button-down.svg" alt="button-down"></img></button></th>
                         <th></th>
                     </tr>
@@ -163,7 +164,7 @@
                         <td class="movi-list__table_tbody_tr1_td2 vertical-align indent66"><a
                                 href=https://www.kinopoisk.ru/film/838/Человек-паук target="_blank">Introduction and
                                 presentations about Envato</a></td>
-                        <td class="movi-list__table_tbody_tr1_td3 vertical-align indent49"><img
+                        <td class="movi-list__table_tbody_tr1_td3 vertical-align indent49"><img class="movi-list__button-plus"
                                 src="images/button-plus.svg" alt="Кнопка"></td>
                     </tr>
                     <tr class="movi-list__table_tbody_tr2 row-height">
@@ -171,7 +172,7 @@
                         <td class="movi-list__table_tbody_tr2_td2 vertical-align indent66"><a
                                 href=https://www.kinopoisk.ru/film/1122114/ target="_blank">Sessions by honorable guests
                                 and Speakers</a></td>
-                        <td class="movi-list__table_tbody_tr2_td3 vertical-align indent49"><img
+                        <td class="movi-list__table_tbody_tr2_td3 vertical-align indent49"><img class="movi-list__button-plus"
                                 src="images/button-plus.svg" alt="Кнопка"></td>
                     </tr>
                     <tr class="movi-list__table_tbody_tr3 row-height">
@@ -179,7 +180,7 @@
                         <td class="movi-list__table_tbody_tr3_td2 vertical-align indent66"><a
                                 href=https://www.kinopoisk.ru/film/846824/ target="_blank">Break and Mingle time with
                                 the authors</a></td>
-                        <td class="movi-list__table_tbody_tr3_td3 vertical-align indent49"><img
+                        <td class="movi-list__table_tbody_tr3_td3 vertical-align indent49"><img class="movi-list__button-plus"
                                 src="images/button-plus.svg" alt="Кнопка"></td>
                     </tr>
                     <tr class="movi-list__table_tbody_tr4 row-height">
@@ -187,7 +188,7 @@
                         <td class="movi-list__table_tbody_tr4_td2 vertical-align indent66"><a
                                 href=https://www.kinopoisk.ru/film/693730/ target="_blank">Portfolio Review, Rewards and
                                 Ending Presentation</a></td>
-                        <td class="movi-list__table_tbody_tr4_td3 vertical-align indent49"><img
+                        <td class="movi-list__table_tbody_tr4_td3 vertical-align indent49"><img class="movi-list__button-plus"
                                 src="images/button-plus.svg" alt="Кнопка"></td>
                     </tr>
                 </tbody>
@@ -497,17 +498,24 @@
     <footer id="contacts">
         <div class="footer__container">
             <div class="footer_blogs">
-
                 <a href="#" class="footer__icons" target="_blank"><i class="icon icon-twitter icons-size"
-                        title="icon-twitter"></i></a>
-                <div class="footer__svg-block">
-                    <a href="#" class="footer__icons" target="_blank"><i class="icon icon-facebook icons-size"
-                            title="icon-facebook"></i></a>
-                </div>
-                <a href="#" class="footer__icons" target="_blank"><i class="icon icon-camera icons-size"
-                        title="icon-camera"></i></a>
+                    title="icon-twitter"></i></a>
+            <div class="footer__svg-block">
+                <a href="#" class="footer__icons" target="_blank"><i class="icon icon-facebook icons-size"
+                        title="icon-facebook"></i></a>
+            </div>
+            <a href="#" class="footer__icons" target="_blank"><i class="icon icon-camera icons-size"
+                    title="icon-camera"></i></a>
+            </div>
+            <div >
+                <p class="footer_paragraf text_white">
+                    Hope we see you at the event! 
+                    <br>
+                    All Rights Reserved. Envato Bangladesh © 2015
+                </p>
             </div>
         </div>
+
         <div>
             <!--Форма ввода-->
             <form action="order.php" method="GET">
