@@ -193,6 +193,7 @@ p {
 /*Второй экран*/
 
 .block2 {
+    display: flex;
     margin: auto;
     max-width: 51.5rem;
     margin-top: 2.4rem;
@@ -205,6 +206,7 @@ p {
 }
 
 .block2__adv {
+    /* display: flex; */
     width: 51.5rem;
     text-align: center;
     padding-top: 8.8rem;
@@ -444,15 +446,24 @@ p {
     margin-top: 2.2rem;
 }
 
+.block5__h2{
+    margin-bottom: 2.1rem;
+}
+
 .block5__text-p {
+    max-width: 33rem;
     margin-top: 2.15rem;
+    margin-bottom: 2.8rem;
     line-height: 0.7rem;
 }
 
 .block5__table {
-    border-collapse: collapse;
+    /* border-collapse: collapse;
     padding-top: 4rem;
-    margin: 3rem auto 0;
+    margin: 3rem auto 0; */
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -1rem;
 }
 
 .block5__relative {
@@ -462,8 +473,13 @@ p {
 }
 
 .block5__movie1 {
-    padding: 1rem;
-    position: relative;
+    padding: 1.3rem;
+     flex: 0 0 33.33%;
+}
+
+.container_block{
+padding-left: 1.3rem;
+padding-right: 1.3rem;
 }
 
 .block5__description {
@@ -473,7 +489,11 @@ p {
     top: 0;
     bottom: 0;
     background-color: rgba(144, 210, 61, 0.5);
+    display: flex;
+    flex-direction: column;
     padding: 1.2rem;
+    border-radius: 0.75rem;
+    overflow: hidden;
     transform: translateY(100%);
     transition: 0.2s;
 }
@@ -483,7 +503,7 @@ p {
 }
 
 .block5__image {
-    display: inline-block;
+    display: block;
     width: 14.8rem;
     height: 14.8rem;
 }
@@ -515,6 +535,7 @@ p {
 }
 
 .block5__text {
+    flex: 1;
     font-size: 0.9rem;
     font-weight: 500;
     color: white;
@@ -539,6 +560,11 @@ p {
     position: absolute;
 }
 
+.my-footer{
+    overflow: hidden;
+    
+}
+
 .footer__container {
     margin: auto;
     width: 100%;
@@ -547,7 +573,6 @@ p {
     /* display: flex; */
     align-items: center;
     justify-content: center;
-    
 }
 
 .footer_blogs {
