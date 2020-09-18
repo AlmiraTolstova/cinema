@@ -3,7 +3,7 @@ html {
     box-sizing: border-box;
     /* font-size: 20px; */
     font-size: 1.0417vw;
-   
+
 }
 
 *,
@@ -126,7 +126,7 @@ p {
 .block1__nav a:hover {
     color: #90d23d;
     cursor: pointer;
-    border-bottom: 0,05rem solid;
+    border-bottom: 0, 05rem solid;
 }
 
 .block1__logo+.block1__navigation {
@@ -174,17 +174,17 @@ p {
     z-index: 165;
 }
 
-.card_container{
+.card_container {
     position: relative;
 }
 
 .card__header {
     font-size: 2rem;
     padding-bottom: 2.02rem;
-    
+
 }
 
-.card p{
+.card p {
     letter-spacing: 0.01rem;
 
 }
@@ -289,12 +289,12 @@ p {
     padding: 1.1rem 15.9rem 1.1rem 3.7rem;
 }
 
-.movi-list__button{
+.movi-list__button {
     width: 1.3rem;
     padding-left: 0.2rem;
 }
 
-.movi-list__button-plus{
+.movi-list__button-plus {
     width: 1.7rem;
 }
 
@@ -385,7 +385,7 @@ p {
     text-align: right;
     float: right;
     margin-top: 7.5rem;
- 
+
 }
 
 .block4__paragraf {
@@ -406,23 +406,23 @@ p {
     color: rgb(255, 255, 255);
 }
 
-.popap{
+.popap {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,.7);
+    background: rgba(0, 0, 0, .7);
 }
 
-.hidden{
+.hidden {
     display: none;
 }
 
-.order-form{
-    background:rgb(255,255,255);
+.order-form {
+    background: rgb(255, 255, 255);
     border-radius: 0.7rem;
-    box-shadow: 1px 0px 5px rgb(125,125,125);
+    box-shadow: 1px 0px 5px rgb(125, 125, 125);
     box-sizing: border-box;
     height: 18rem;
     width: 16rem;
@@ -431,13 +431,14 @@ p {
     position: relative;
 }
 
-.close{
+.close {
     display: block;
     position: absolute;
     right: 1rem;
     cursor: pointer;
-   
+
 }
+
 /*Пятый экран*/
 
 .block5 {
@@ -446,7 +447,7 @@ p {
     margin-top: 2.2rem;
 }
 
-.block5__h2{
+.block5__h2 {
     margin-bottom: 2.1rem;
 }
 
@@ -474,12 +475,12 @@ p {
 
 .block5__movie1 {
     padding: 1.3rem;
-     flex: 0 0 33.33%;
+    flex: 0 0 33.33%;
 }
 
-.container_block{
-padding-left: 1.3rem;
-padding-right: 1.3rem;
+.container_block {
+    padding-left: 1.3rem;
+    padding-right: 1.3rem;
 }
 
 .block5__description {
@@ -560,9 +561,9 @@ padding-right: 1.3rem;
     position: absolute;
 }
 
-.my-footer{
+.my-footer {
     overflow: hidden;
-    
+
 }
 
 .footer__container {
@@ -605,7 +606,7 @@ padding-right: 1.3rem;
     padding-right: 0.75rem;
 }
 
-.footer_paragraf{
+.footer_paragraf {
     font-size: 0.9rem;
     /* width: 18.6rem; */
     text-align: center;
