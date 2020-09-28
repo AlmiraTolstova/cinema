@@ -296,6 +296,7 @@ p {
 
 .movi-list__button-plus {
     width: 1.7rem;
+    align-items: center;
 }
 
 /**Таблица. Тело.**/
@@ -319,6 +320,10 @@ p {
 
 .movi-list__table_tbody_tr4 {
     background-color: #4b4d4f;
+}
+
+.movi-list__table_tbody_tr5 {
+    background-color: #373737;
 }
 
 .movi-list a {
@@ -436,7 +441,6 @@ p {
     position: absolute;
     right: 1rem;
     cursor: pointer;
-
 }
 
 /*Пятый экран*/
@@ -459,7 +463,6 @@ p {
 }
 
 .block5__table {
-
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-row-gap: 2.8rem;
@@ -635,6 +638,7 @@ p {
 
 .indent49 {
     padding-right: 2.45rem;
+    vertical-align: middle;
 }
 
 .button-transparent {
