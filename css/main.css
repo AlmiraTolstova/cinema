@@ -1,7 +1,6 @@
 /*Начальная инициализация*/
 html {
     box-sizing: border-box;
-    /* font-size: 20px; */
     font-size: 1.0417vw;
 
 }
@@ -82,7 +81,9 @@ p {
 }
 
 .block1__row {
+    display: flex;
     padding-top: 2.6rem;
+    justify-content: space-around;
 }
 
 .block1__logo {
@@ -158,23 +159,24 @@ p {
     padding: 0.5rem
 }
 
+.block1__city{
+ 
+display: inline-block;
+color: rgb(255, 255, 255);
+padding-top: 0.85rem;
+}
 
+.block1__city a{
+    font-size: 0.75rem;
+    color: white;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
 
 /*Наложение карточки*/
 
 .card {
     position: relative;
-    /* max-width: 51.5rem;
-    position: absolute;
-    right: 22rem;
-    top: 32rem;
-    width: 26rem;
-    height: 13.3rem;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 0.05rem 0.05rem 0.1rem 0rem rgba(35, 31, 32, 0.65);
-    padding: 1.6rem 3.2rem 1.2rem 1.5rem;
-    z-index: 165; */
-   
 }
 
 .card_container {
@@ -206,7 +208,6 @@ p {
     margin: auto;
     max-width: 51.5rem;
     margin-top: 2.4rem;
-    /* overflow: hidden; */
 }
 
 .block2__header {
@@ -296,15 +297,12 @@ p {
 .movi-list__table_thead_th1 {
     padding: 0.75rem;
     text-align: center;
-
-    /* padding: 1.1rem 2.8rem 1.1rem 4.1rem; */
 }
 
 .movi-list__table_thead_th2 {
     padding: 0.75rem;
     text-align: left;
-    /* padding: 1.1rem 15.9rem 1.1rem 3.7rem; */
-}
+ }
 .movi-list__table_thead_th3{
     padding: 0.75rem;
     text-align: left;

@@ -1,6 +1,4 @@
-@media screen and (max-width:1200px) {
-
-}
+@media screen and (max-width:1200px) {}
 
 @media screen and (max-width:850px) {
     html {
@@ -11,10 +9,12 @@
     .block5__container {
         padding: 1rem;
     }
-    .block1__logo{
+
+    .block1__logo {
         width: auto;
         padding-right: 1rem;
     }
+
     .menu__burger {
         position: relative;
         width: 26px;
@@ -111,18 +111,18 @@
         margin: 0 0 3rem;
     }
 
-    .movi-list__wrapper{
+    .movi-list__wrapper {
         width: 100%;
         overflow-x: auto;
     }
 
-    .movi-list__table{
+    .movi-list__table {
         min-width: 1000px;
     }
 
-    .block5__table{
+    .block5__table {
         grid-template-columns: 1fr 1fr;
-        
+
     }
 
     .block5 {
@@ -133,7 +133,7 @@
         overflow: hidden;
     }
 
-    .block2__adv-inline{
+    .block2__adv-inline {
         float: none;
     }
 
@@ -141,7 +141,7 @@
         padding-left: 12rem;
     }
 
-    .card_container{
+    .card_container {
         position: relative;
         width: 100%;
         margin: 0 1rem 3rem 1rem;
@@ -149,166 +149,185 @@
         width: 35.5rem;
     }
 
-    .block2__header{
+    .block2__header {
         margin-left: 1rem;
     }
 
-    h2{
+    h2 {
         font-size: 2.2rem;
     }
 
-    .block4__present-text{
+    .block4__present-text {
         width: 26.5rem;
         padding-right: 1rem;
     }
 
-    .footer_blogs{
+    .footer_blogs {
         margin: 3rem 38.35% 0rem;
     }
 
-    p{
+    p {
         font-size: 1rem;
         font-weight: 300;
         line-height: 0.87;
     }
 
-    .block5__text-p{
+    .block5__text-p {
         line-height: 1rem;
     }
 
-    .movi-list__text{
+    .movi-list__text {
         padding: 1rem;
         line-height: 1;
     }
 
-    .block2__adv-inline p{
+    .block2__adv-inline p {
         line-height: 1rem;
         padding-bottom: 1rem;
     }
 }
 
 
-@media screen and (max-width:450px) {
-    .block1{
-        min-height: 50vh;
+@media screen and (max-width:600px) {
+    .block1 {
+        min-height: 60vh;
     }
 
-    .card__header{
+    .card__header {
         font-size: 3rem;
     }
 
-    h2{
+    h2 {
         font-size: 3rem;
     }
 
-    h3{
+    h3 {
         font-size: 2.5rem;
     }
 
-    p{
+    p {
         font-size: 1.4rem;
         line-height: 1.5rem;
     }
 
-    .block2__adv-inline{
+    .block1__row {
+        display: block;
+    }
+
+    .menu__burger {
+        margin-left: 30rem;
+        width: 27px;
+        height: 27px;
+        overflow: hidden;
+        margin-top: 0.2rem;
+    }
+
+    .block1__city {
+        display: none;
+    }
+
+    .block2__adv {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .block2__adv-inline {
         width: 100%;
     }
 
-    .block2__adv-inline p{
+    .block2__adv-inline p {
         line-height: 1.5rem;
     }
 
-    .card p{
+    .card p {
         line-height: 1.5rem;
     }
 
-    .block2__adv{
+    .block2__adv {
         padding-left: 1rem;
         padding-right: 1rem;
         width: 100%;
     }
 
-    .movi-list__table_thead{
+    .movi-list__table_thead {
         font-size: 2rem;
     }
 
-    .movi-list__table_tbody{
+    .movi-list__table_tbody {
         font-size: 1.8rem;
     }
 
-    .movi-list__table{
+    .movi-list__table {
         min-width: 72rem;
     }
 
-    .movi-list__text{
+    .movi-list__text {
         line-height: 1.5rem;
     }
 
-    .block4{
+    .block4 {
         height: 62.5rem;
     }
 
-    .block4__button-style{
+    .block4__button-style {
         width: 18rem;
         height: 4.75rem;
         font-size: 1.8rem;
     }
 
-    .block5__text-p{
+    .block5__text-p {
         line-height: 1.5rem;
         font-size: 1.4rem;
     }
 
-    .block5__table{
+    .block5__table {
         grid-template-columns: 1fr;
     }
 
-    .block5__image{
+    .block5__image {
         width: 100%;
     }
 
-    .block5__text-header{
+    .block5__text-header {
         font-size: 3.75rem;
 
     }
 
-    .block5__white-line{
+    .block5__white-line {
         width: 24.2rem;
         height: 0.5rem;
     }
 
-    .block5__text{
+    .block5__text {
         font-size: 1.9rem;
     }
 
-    .block5__link{
+    .block5__link {
         width: 4.5rem;
         height: 4.5rem;
         line-height: 4.5rem;
     }
 
-    .icon{
+    .icon {
         font-size: 3rem;
     }
 
-    .footer_blogs{
+    .footer_blogs {
         width: 15rem;
         margin: 1rem 29.35% 0rem;
     }
 
-    .footer__icons{
+    .footer__icons {
         width: 4.2rem;
         height: 4.2rem;
         line-height: 4.2rem;
     }
 
-    .footer_paragraf{
+    .footer_paragraf {
         font-size: 1.5rem;
     }
 
-    .block1__img-logo{
+    .block1__img-logo {
         width: 17.25rem;
     }
-
 }
-
