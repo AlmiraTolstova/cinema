@@ -1,20 +1,4 @@
 @media screen and (max-width:1200px) {
-    /* p a{font-size:14px ;}
-
-    .block1__city-p{
-        font-size: 12px;
-    }
-
-    .block1__city-p a{
-        font-size: 12px;
-    }
-
-    .block1__nav a{
-        font-size: 12px;
-    } */
-}
-
-@media screen and (max-width:1200px) {
     html {
 
         font-size: 2.65vw;
