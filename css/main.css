@@ -54,7 +54,8 @@ h3 {
 }
 
 p {
-    font-size: 0.7rem;
+    /* font-size: 0.7rem; */
+    font-size:calc(12px + 0.1rem);
     font-weight: 300;
 }
 
@@ -562,6 +563,7 @@ padding-top: 0.85rem;
     position: relative;
     text-align: center;
     line-height: 1.5rem;
+    font-size: 1rem;
 }
 
 .block5__text {
@@ -688,6 +690,10 @@ padding-top: 0.85rem;
 .icons-size {
     font-size: 1.5rem;
 
+}
+
+.maximum-height{
+    max-height: 18rem;
 }
 
 /* .carusel {
