@@ -169,7 +169,7 @@
                 <table class="movi-list__table">
                     <thead class="movi-list__table_thead">
                         <tr class="row-height">
-                            <th></th>
+                            
                             <th class="movi-list__table_thead_th1 vertical-align">Время сеанса <button><img
                                         class="movi-list__button" src="images/button-up.svg"
                                         alt="button-up"></img></button></th>
@@ -177,7 +177,8 @@
                                         class="movi-list__button" src="images/button-down.svg"
                                         alt="button-down"></img></button></th>
                             <th class="movi-list__table_thead_th3 vertical-align">Жанр</th>
-                            <th class="movi-list__table_thead_th4"></th>
+                            
+                            <th class="movi-list__table_thead_th3 vertical-align">Цена</th>
                         </tr>
                     </thead>
                     <tbody class="movi-list__table_tbody" id="table_body">
@@ -241,37 +242,107 @@
             </div>
         </div>
     </div>
+    <!---------------форма для подарка------------>
     <div id="popap" class="popap hidden">
         <div class="order-form">
+            <div class="close">
+                <i id="popap_close" class="icon icon-cross icon__close" title="cross"></i>
+            </div>
             <form action="">
-                <div class="close">
-                    <i id="popap_close" class="icon icon-cross" title="cross"></i>
-                    <input type="text" placeholder="Имя*" name="" id="text11" required>
+                <div class="order-form__body">
+                    <input type="text" class="order-form__input-fields" placeholder="Имя*" name="" id="text11" required>
+                    <div class="order-form__select-place">
+                        <!--Выпадающий список-->
+                        <select id="select" type="text" required="" class="order-form__input-fields">
+                            <option>Выберите место</option>
+                            <option>Выбор 1</option>
+                            <option>Выбор 2</option>
+                            <option>Выбор 3</option>
+                            <option>Выбор 4</option>
+                            <option>Выбор 5</option>
+                            <option>Выбор 6</option>
+                            <option>Выбор 7</option>
+                            <option>Выбор 8</option>
+                            <option>Выбор 9</option>
+                            <option>Выбор 10</option>
+                        </select>
+                    </div>
+                    <div class="popup-error-message">
 
-                    <!--Выпадающий список-->
-                    <select name="select" required>
-                        <option value="value1" selected>
-                            Выбор1
-                        </option>
-                        <option value="value2">
-                            Выбор2
-                        </option>
-                    </select>
-                    <!--Радио кнопка-->
-
-                    <label for="radioButton1">Выбор1</label>
-                    <input type="radio" id="radioButton11" name="choice" value="radio1">
-                    </input>
-
-                    <label for="radioButton2">Выбор2</label>
-                    <input type="radio" id="radioButton12" name="choice" value="radio2">
-                    </input>
+                    </div>
+                    <div class="order-form__input-wrap">
+                        <label for="agree"></label>
+                        <input type="checkbox" name="agree" id="agree">Я согласен на обработку персональных данных
+                        <div class="popup-error-message"></div>
+                    </div>
+                    <div class="order-form__input-wrap">
+                        <label for="submit"></label>
+                        <input type="submit" value="Заказать" class="block4__button-style" id="submit">
+                    </div>
+                    
                 </div>
             </form>
         </div>
     </div>
-
-
+    <!------------------------------------------->
+    <!--------------Форма покупки билетов-------->
+    <div id="order-tickets__place" class="order-tickets hidden" ><!----> <!--style="display: none";-->
+        <form action="order.php" class="order-tickets__form" id="orderForm">
+            <div id="closeOrderFrom" class="close">
+                <i id="popap_close" class="icon icon-cross icon__close" title="cross"></i>
+            </div>
+            <div class="order-tickets__data">
+                <div class="modal-form">
+                    Название фильма: <span id="orderFilmName">Человек-паук</span>
+                </div>
+                <div class="modal-form">
+                    Жанр: <span id="orderFilmGanar">фантастика, боевик, приключения</span>
+                </div>
+                <div class="modal-form">
+                    Начало: <span id="orderFilmStart">10:00</span>
+                </div>
+                <div class="modal-form">
+                    Зал: <span id="orderFilmRoom">X</span>
+                </div>
+                <div class="modal-form">
+                    Стоимость 1 билета: <span id="orderFilmPrice">200</span>
+                </div>
+                <div class="modal-form">
+                    Кол-во выбранных: <span id="orderFilmCountTicket">0</span>
+                </div>
+                <div class="modal-form">
+                    Номера выбранных мест: <span id="orderFilmNumberPlaces">-</span>
+                </div>
+                <div class="modal-form">
+                    Общая стоимость: <span id="orderFilmTotalPrice">0</span>
+                </div>
+            
+                <div class="modal-input">
+                    <div class="order-tickets__customer">
+                        <label for="phone" >Телефон</label>
+                        <input type="tel" name="phone" id="phone" placeholder="+7(999)-999-99-99">
+                        <p class="popup-error-message"></p>
+                    </div>
+                    <div class="order-tickets__customer ">
+                        <label for="text-name" >Имя</label>
+                        <input type="text" class="order-tickets__mod-marg-left" name="name" id="text-name" placeholder="Введите имя">
+                        <p class="popup-error-message"></p>
+                    </div>
+                </div> 
+                <div id="cinema-tickets" class="cinema-tickets">
+                </div>
+                
+                <div class="tickets-error error">
+                    <p class="popup-error-message"></p>
+                </div>
+                <div>
+                    <label for="sendOrder"></label>
+                    <input type="submit" class="block4__button-style order-tickets__mod-marg-top" name="name-submit" value="Заказать" class="button2" id="sendOrder">
+                </div>
+            </div>
+        </form>
+    </div>
+    <!------------------------------------------->
 
     <!--Конец четвертого экрана-->
 

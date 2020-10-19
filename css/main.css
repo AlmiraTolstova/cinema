@@ -437,7 +437,7 @@ padding-top: 0.85rem;
     height: 2.75rem;
     color: rgb(255, 255, 255);
 }
-
+/*Начало стилей формы для подарка*/
 .popap {
     position: fixed;
     top: 0;
@@ -445,6 +445,7 @@ padding-top: 0.85rem;
     width: 100%;
     height: 100%;
     background: rgba(0, 0, 0, .7);
+    z-index: 2;
 }
 
 .hidden {
@@ -456,8 +457,8 @@ padding-top: 0.85rem;
     border-radius: 0.7rem;
     box-shadow: 1px 0px 5px rgb(125, 125, 125);
     box-sizing: border-box;
-    height: 18rem;
-    width: 16rem;
+    height: 22rem;
+    width: 30rem;
     padding: 1rem;
     margin: 7.5rem auto;
     position: relative;
@@ -470,6 +471,117 @@ padding-top: 0.85rem;
     cursor: pointer;
 }
 
+.order-form__body{
+    max-width: 22.5rem;
+    padding: 1.25rem;
+    padding-top: 2.5rem;
+    padding-right: 1.25rem;
+    padding-bottom: 1.25rem;
+    padding-left: 1.25rem;
+    margin: auto;
+}
+
+.icon__close
+{
+    font-size: 2rem;
+}
+
+.order-form__select-place{
+    margin-top: 2rem;
+}
+
+.order-form__input-fields{
+    font-size: .95rem;
+    color: #6c6c6c;
+    padding: 0.75rem 0.55rem;
+    border: 1px solid #bebebe;
+    border-radius: 0.25rem;
+    width: 100%;
+}
+
+.order-form__input-wrap{
+    margin-top: 2rem;
+}
+/*Конец стилей формы для подарка*/
+/*Начало стилей для формы покупки билета*/
+.order-tickets{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .7);
+    z-index: 2;
+}
+
+.order-tickets__form{
+    width: 50rem;
+    height: 45.7rem;
+    border-radius: 15px;
+    background-color: #fff;
+    padding: 30px 20px;
+    margin: 150px auto;
+    position: relative;
+}
+
+.modal-form{
+    font-size: 1.5rem;
+    color: #6c6c6c;
+    padding: 0.3rem 0.3rem;
+    border: 1px solid #bebebe;
+    border-radius: 0.25rem;
+    width: 100%;
+    margin: auto;
+    margin-top: 0.7rem;
+}
+
+.order-tickets__data{
+    padding-top: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.order-tickets__customer{
+    padding-top: 1rem;
+    font-size: 1.5rem;
+    color: #a3cc40;
+}
+
+.order-tickets__mod-marg-left{
+    margin-left: 3rem;
+}
+
+.order-tickets__mod-marg-top{
+    margin-top: 0.7rem;
+}
+
+.busy {
+    background: #ffa500;
+}
+
+.spare{
+    background: #a3cc40;
+}
+
+.focused{
+    background: gray;
+}
+
+.cinema-tickets{
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.square{
+    display: inline-block;
+    text-align: center;
+    padding-top: 3px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #0a0a0a;
+    margin: 2px;
+}
+/*Конец стилей для формы покупки билета*/
 /*Пятый экран*/
 
 .block5 {

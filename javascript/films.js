@@ -33,7 +33,8 @@ const films = [
         href: 'https://www.kinopoisk.ru/film/1047883/',
         filmHire: false,
         filmNew: true,
-        image:'images/mov12.png'
+        image:'images/mov12.png',
+        price: 200
         //image: 'https://st.kp.yandex.net/im/poster/3/4/1/kinopoisk.ru-Once-Upon-a-Time-in-Hollywood-3411483.jpg',
         
     },
@@ -44,7 +45,8 @@ const films = [
         href: 'https://www.kinopoisk.ru/film/398239/',
         filmHire: true,
         filmNew: false,
-        image:'https://st.kp.yandex.net/im/poster/9/2/4/kinopoisk.ru-The-Ugly-Truth-924394.jpg'
+        image:'https://st.kp.yandex.net/im/poster/9/2/4/kinopoisk.ru-The-Ugly-Truth-924394.jpg',
+        price: 250
         
     },
     {
@@ -54,7 +56,8 @@ const films = [
         href: 'https://www.kinopoisk.ru/film/378140/',
         filmHire: true,
         filmNew: false,
-        image:'https://st.kp.yandex.net/im/poster/7/8/1/kinopoisk.ru-RocknRolla-781092.jpg'
+        image:'https://st.kp.yandex.net/im/poster/7/8/1/kinopoisk.ru-RocknRolla-781092.jpg',
+        price: 300
         
     },
     {
@@ -64,7 +67,8 @@ const films = [
         href: 'https://www.kinopoisk.ru/film/586397/',
         filmHire: true,
         filmNew: false,
-        image:'https://st.kp.yandex.net/im/poster/2/2/9/kinopoisk.ru-Django-Unchained-2295520.jpg'
+        image:'https://st.kp.yandex.net/im/poster/2/2/9/kinopoisk.ru-Django-Unchained-2295520.jpg',
+        price: 400
     },
     {
         Time: '18:10',
@@ -73,7 +77,8 @@ const films = [
         href: 'https://www.kinopoisk.ru/film/1143242/',
         filmHire: false,
         filmNew: true,
-        image:'images/mov4.png'
+        image:'images/mov4.png',
+        price: 350
         //image: 'https://st.kp.yandex.net/im/poster/3/4/5/kinopoisk.ru-The-Gentlemen-3451969.jpg'
     },
     {
@@ -83,7 +88,8 @@ const films = [
         href: 'https://www.kinopoisk.ru/film/361/',
         filmHire: true,
         filmNew: false,
-        image:'https://st.kp.yandex.net/im/poster/1/8/0/kinopoisk.ru-Fight-Club-1801679.jpg'
+        image:'https://st.kp.yandex.net/im/poster/1/8/0/kinopoisk.ru-Fight-Club-1801679.jpg',
+        price: 370
     },
     {
         Time: '10:20',
@@ -92,7 +98,8 @@ const films = [
         href: 'https://www.kinopoisk.ru/film/2360/',
         filmHire: true,
         filmNew: false,
-        image:'https://st.kp.yandex.net/im/poster/8/7/1/kinopoisk.ru-The-Lion-King-871467.jpg'
+        image:'https://st.kp.yandex.net/im/poster/8/7/1/kinopoisk.ru-The-Lion-King-871467.jpg',
+        price: 200
     },
     {
         Time: '21:15',
@@ -101,7 +108,8 @@ const films = [
         href: 'https://www.kinopoisk.ru/film/526/',
         filmHire: false,
         filmNew: true,
-        image:'images/mov5.png'
+        image:'images/mov5.png',
+        price: 250
         //image: 'https://st.kp.yandex.net/im/poster/1/4/4/kinopoisk.ru-Snatch-1442022.jpg'
     },
     {
@@ -111,7 +119,8 @@ const films = [
         href: 'https://www.kinopoisk.ru/film/32898/',
         filmHire: false,
         filmNew: true,
-        image:'images/mov6.png'
+        image:'images/mov6.png',
+        price: 350
         //image: 'https://st.kp.yandex.net/im/poster/2/3/5/kinopoisk.ru-Knockin_27-on-Heaven_27s-Door-235277.jpg'
     },
     {
@@ -121,7 +130,8 @@ const films = [
         href: 'https://www.kinopoisk.ru/film/447301/',
         filmHire: false,
         filmNew: true,
-        image:'images/mov7.png'
+        image:'images/mov7.png',
+        price: 350
         //image: 'https://st.kp.yandex.net/im/poster/1/8/9/kinopoisk.ru-Inception-1896672.jpg'
     },
     {
@@ -131,7 +141,8 @@ const films = [
         href: 'https://www.kinopoisk.ru/film/356/',
         filmHire: false,
         filmNew: true,
-        image:'images/mov8.png'
+        image:'images/mov8.png',
+        price: 277
         //image: 'https://avatars.mds.yandex.net/get-kinopoisk-image/1600647/f9d40e34-f5b2-49ca-9fe0-bbdd3e43da3a/300x450'
     },
     {
@@ -141,7 +152,8 @@ const films = [
         href: 'https://www.kinopoisk.ru/film/408410/',
         filmHire: false,
         filmNew: true,
-        image:'images/mov9.png'
+        image:'images/mov9.png',
+        price: 315
         //image: 'https://avatars.mds.yandex.net/get-kinopoisk-image/1946459/fe294fb7-2b61-40e0-b646-00885edf7f06/300x450'
     },
     {
@@ -151,7 +163,8 @@ const films = [
         href: 'https://www.kinopoisk.ru/film/371/',
         filmHire: false,
         filmNew: true,
-        image:'images/mov10.png'
+        image:'images/mov10.png',
+        price: 350
         //image: 'https://st.kp.yandex.net/im/poster/1/9/5/kinopoisk.ru-Saving-Private-Ryan-1953013.jpg'
     },
     {
@@ -161,19 +174,18 @@ const films = [
         href: 'https://www.kinopoisk.ru/film/1108577/',
         filmHire: false,
         filmNew: true,
-        image:'images/mov11.png'
+        image:'images/mov11.png',
+        price: 250
         //image: 'https://avatars.mds.yandex.net/get-kinopoisk-image/1599028/4b27e219-a8a5-4d85-9874-57d6016e0837/300x450'
     }
  
 ]
 
-
-
 //--------------------объект Film----------------------//
 class Film{
     //поля
     //для передачи  данных в поля класса извне используется конструктор
-    constructor(Time, name, ganar, href ,filmHier, filmNew, image){
+    constructor(Time, name, ganar, href ,filmHier, filmNew, image, price){
         this.time=Time;
         this.name=name;
         this.ganar=ganar;
@@ -181,6 +193,7 @@ class Film{
         this.filmHier=filmHier;
         this.filmNew=filmNew;
         this.image=image;
+        this.price=price;
     }
     //методы
     getName(){
@@ -202,20 +215,59 @@ class Film{
             return newJanre;
         }
     }
+    getPrice(){
+        return this.price;
+    }
 
 //-----------в параметр numberStyleRow передается номер стиля для формирования
 //-----------стиля в виде: movi-list__table_tbody_tr1
-    getRenderStringForSelectFilm(numberStyleRow){
+    getRenderStringForSelectFilm(numberStyleRow, index){
         let renderString='';
         let filmRow=document.createElement('tr');
         filmRow.classList.add('movi-list__table_tbody_tr'+numberStyleRow);
         filmRow.classList.add('row-height');
-        renderString+=`<td></td>`;
+        
         renderString+=`<td class="vertical-align center">`+this.time+`</td>`;
         renderString+=`<td class="vertical-align indent66"><a href="`+this.href+`" target="_blank">`+this.name+`</a></td>`;
         renderString+=`<td class="vertical-align">`+this.getGanre()+`</td>`;
-        renderString+=`<td class="vertical-align indent49"><img class="movi-list__button-plus" src="images/button-plus.svg" alt="Кнопка"></td></tr>`;
+        renderString+=`<td class="vertical-align center">`+this.price+`</td></tr>`;
         filmRow.innerHTML=renderString;
+        
+        let filmName = this.getName();
+        let filmStart = this.getStart();
+        let filmGanars = this.getGanre();
+        let filmPrice = this.price;
+        
+        //вешаем обработчик события на строку, вызывающий модальное окно
+        filmRow.onclick = function () 
+        {
+            indexCurrentFilm=index;
+           refreshCinemaPlaces(index);
+            // 1. Находим элемент с формой заказ
+            // 2. Изменить состояние из display: none -> display: block;
+            // 3. Отобразить данные по бронированию фильма       
+            orderForm.style.display = 'block';
+            let orderTicketsPlace = document.getElementById('order-tickets__place');
+            orderTicketsPlace.classList.remove('hidden');
+
+            let orderFilmName = document.getElementById('orderFilmName'),
+                orderFilmStart = document.getElementById('orderFilmStart'),
+                orderFilmGanar = document.getElementById('orderFilmGanar'),
+                orderFilmPrice = document.getElementById('orderFilmPrice');
+        
+            orderFilmName.innerHTML = filmName;
+            orderFilmStart.innerHTML = filmStart;
+            orderFilmGanar.innerHTML = filmGanars;
+            orderFilmPrice.innerHTML = filmPrice;
+        
+            let orderFilmCountTicket = document.getElementById('orderFilmCountTicket'),
+                orderFilmTotalPrice = document.getElementById('orderFilmTotalPrice'),
+                orderFilmTicketsNumberList = document.getElementById('orderFilmNumberPlaces');
+        
+            orderFilmTotalPrice.innerHTML = customerOrder.getOrderPlacesCustom();//filmPrice * orderFilmCountTicket.value;
+            orderFilmTicketsNumberList.innerHTML=customerOrder.getOrderPlacesList();
+            orderFilmCountTicket.innerHTML=customerOrder.getOrderPlacesCount();
+        }
         return filmRow;
     }
 
@@ -258,7 +310,7 @@ let filmsNew = [];
 //---------------рассортируем массив фильмов ----------//
 for(let filmIndex=0;filmIndex<films.length;filmIndex++)
 {
-    let newFilm=new Film(films[filmIndex].Time,films[filmIndex].Name,films[filmIndex].id,films[filmIndex].href,films[filmIndex].filmHire,films[filmIndex].filmNew,films[filmIndex].image);
+    let newFilm=new Film(films[filmIndex].Time,films[filmIndex].Name,films[filmIndex].id,films[filmIndex].href,films[filmIndex].filmHire,films[filmIndex].filmNew,films[filmIndex].image, films[filmIndex].price);
     if(films[filmIndex].filmHire==true)   
     {
         filmsHier.push(newFilm);
@@ -269,6 +321,258 @@ for(let filmIndex=0;filmIndex<films.length;filmIndex++)
     }
 }
 
+//------------------объект Place-----------------------//
+class Place{
+    //поля
+    constructor(number, price, booking){
+        this.number=number;     //номер места
+        this.price=price;       //цена
+        this.booking=booking;   //флаг брони
+    }
+}
+
+//------------------массив объектов Place--------------//
+let places=[];
+let newPlace;
+//------------ШАГ6 заполняем заглушку данными----------//
+function refreshFilmPlaces(){
+    for(let i=0;i<filmsHier.length;i++)
+    {
+        let newPlaces=[];
+        for(let j=1; j<11;j++)
+        {
+            newPlace = new Place(j,filmsHier[i].getPrice(),false);
+            newPlaces.push(newPlace);
+        }
+        places.push(newPlaces);
+    }
+}
+refreshFilmPlaces();
+
+//console.log(places);
+
+//-------Объект заказ для хранения данных о заказе-----//
+class CustomerOrder{
+    //поля
+    constructor(){
+        this.places =[];   //массив для хранения перечня мест купленных покупателем
+    }
+    //методы
+    //получить перечень заказанных мест в виде строки
+    getOrderPlacesList(){
+        let numberPlacesOrder='';
+        for(let i=0; i<this.places.length;i++)
+        {
+            numberPlacesOrder+=this.places[i].number;
+            //если это не последнее место в массиве, добавим в конец строки запятую
+            if(i!=this.places.length-1)
+            {
+                numberPlacesOrder+=', ';
+            }
+        }
+        return numberPlacesOrder;
+    }
+    //получить общую стоимость купленных билетов
+    getOrderPlacesCustom(){
+        let custom=0;
+        for(let i=0; i<this.places.length;i++)
+        {
+            custom+=this.places[i].price;
+        }
+        return custom;
+    }
+    //получить общее количество заказанных билетов
+    getOrderPlacesCount(){
+        return this.places.length;
+    }
+    //добавить заказанное место в перечень заказов
+    addOrderToOrderList(number, price, booking){
+        let newPlace = new Place(number, price, booking);
+        this.places.push(newPlace);
+    }
+    //удалить заказанное место из перечня заказов
+    removeOrderFromOrderList(number)
+    {
+        //найти элемент в массиве с номером места
+        for(let i=0; i<this.places.length;i++)
+        {
+            if(this.places[i].number==number)
+            {
+                //удалим текущий элемент
+                this.places.slice(i,1);
+                //и прервем цикл и выйдем
+                break;
+            }
+        }
+    }
+    //очистить список заказов
+    clearOrderList(){
+        this.places.splice(0,this.places.length);
+    }
+}
+
+//--создадим объект заказ покупателя при создании страницы--/
+let customerOrder=new CustomerOrder();
+let indexCurrentFilm=0;
+
+
+
+//------------ШАГ8 рендерим места в форму---------------//
+function refreshCinemaPlaces(index)
+{
+    console.log(places[index]);
+    let divCinemaTickets = document.getElementById('cinema-tickets');
+    divCinemaTickets.innerHTML='';    
+    for(let i=0; i<places[index].length;i++){
+        let newDiv = document.createElement('div');
+        newDiv.classList.add('square');
+        //если место уже занято, то добавляем класс busy, цвет красный
+        if(places[index][i].booking==true)
+        {
+            newDiv.classList.add('busy');
+        }
+        else    //иначе, добавляем класс spare, цвет синий
+        {
+            newDiv.classList.add('spare');
+        }
+        newDiv.innerHTML=(places[index][i].number);
+        //обработка клика на квадрате с местом
+        newDiv.addEventListener('click',order);//{handleEvent:order, indexFilm:index}
+        //обработка правого клика на квадрате с местом
+        newDiv.addEventListener('contextmenu',placeContext.bind(null, places[index][i].price));
+        //обработка события перемещения курсора мыши над элементом
+        newDiv.addEventListener('mouseover',placeHover);
+        //обработка события перемещения курсора мыши за пределы элемента
+        newDiv.addEventListener('mouseout',placeHoverOut);
+        //добавим созданную строку с квадратиками мест в форму
+        divCinemaTickets.appendChild(newDiv);
+    }
+    let orderFilmCountTicket = document.getElementById('orderFilmCountTicket'),
+                orderFilmTotalPrice = document.getElementById('orderFilmTotalPrice'),
+                orderFilmTicketsNumberList = document.getElementById('orderFilmNumberPlaces');
+        
+    orderFilmTotalPrice.innerHTML = customerOrder.getOrderPlacesCustom();//filmPrice * orderFilmCountTicket.value;
+    orderFilmTicketsNumberList.innerHTML=customerOrder.getOrderPlacesList();
+    orderFilmCountTicket.innerHTML=customerOrder.getOrderPlacesCount();
+}
+
+//--------Первое заполнение формы с местами в зале--------//
+//refreshCinemaPlaces(0);
+
+//---------ШАГ 9 создание функций обработчиков------------//
+window.order9=function(){
+    console.log('step 9 order');
+}
+window.placeToggle9=function(){
+    console.log('step 9 placeToggle');
+}
+window.placeContext9=function(){
+    console.log('step 9 placeContext');
+}
+window.placeHover9=function(){
+    console.log('step 9 placeHover');
+}
+window.placeHoverOut9=function(){
+    console.log('step 9 placeHoverOut');
+}
+//обработка клика на квадрате с местом
+function order(e){
+    //window.order9();
+    //console.log(e.target.innerHTML);
+    console.log(e.target.innerHTML);
+    //переменная, в которой хранится признак успешности отметки
+    let successFinded=false;
+    //если содержимое div квадратика с местом не пустой
+    if(e.target.innerHTML!=null)
+    {
+        console.log(places[indexCurrentFilm]);
+        //запустим цикл по массиву с местами, найдем выбранное место и отметим его
+        for(let i=0; i<places[indexCurrentFilm].length;i++)
+        {
+            if(places[indexCurrentFilm][i].number==e.target.innerHTML)
+            {
+                //выставим признак успешного поиска места
+                successFinded=true;
+                //проверяем было ли данное место уже заказано
+                if(places[indexCurrentFilm][i].booking==true)
+                {
+                    alert('Данное место уже было куплено, закажите пожалуйста другое');
+                    break;
+                }
+                else
+                {
+                    //установим признак брони данного места
+                    places[indexCurrentFilm][i].booking=true;
+                    //добавим в заказ покупателю
+                    customerOrder.addOrderToOrderList(places[indexCurrentFilm][i].number,places[indexCurrentFilm][i].price,places[indexCurrentFilm][i].booking);
+                    break;
+                }
+                
+            }
+        }
+        if(successFinded!=true)
+        {
+            alert('Место с таким номером не найдено, перезагрузите пожалуйста страницу и попробуйте снова');
+        }
+        else
+        {
+            refreshCinemaPlaces(indexCurrentFilm);
+        }
+    }
+}
+//обработка клика на квадрате с местом смена цвета
+function placeToggle(){
+    //в данной функции нет необходимости, так как 
+    //цвета квадратиков с местами обновляются при
+    //клике в функции refreshCinemaPlaces
+}
+//обработка правого клика на квадрате с местом
+function placeContext(price){
+    alert(price);
+}
+//обработка события перемещения курсора мыши над элементом
+function placeHover(){
+    
+    this.classList.add('focused');
+}
+//обработка события перемещения курсора мыши за пределы элемента
+function placeHoverOut(){
+    this.classList.remove('focused')
+}
+
+// Закрытие модального окна
+/*** РАЗОБРАТЬ Event Handler */
+let orderForm = document.getElementById('orderForm');
+let closeOrderForm = document.getElementById('closeOrderFrom');
+let orderTicketsPlace = document.getElementById('order-tickets__place');
+
+closeOrderForm.onclick = function () {
+    //orderForm.style.display = 'none';
+    customerOrder.clearOrderList();
+    //при закрытии модального окна очистим массив мест
+    places.splice(0,places.length);
+    //и заполним его начальными значениями
+    refreshFilmPlaces();
+    orderTicketsPlace.classList.add('hidden');
+}
+
+// Валидация ввода имени
+/** РАЗОБРАТЬ Event Handler */
+let sendOrder = document.getElementById('sendOrder');
+sendOrder.onclick = function () {
+  let orderClinetName = document.getElementById('orderClinetName');
+
+  if (orderClinetName.value) {
+    orderClinetName.style.border = '1px solid #bebebe';
+  } else {
+    orderClinetName.style.border = '2px solid red';
+  }
+}
+
+
+
+
+
 
 // Шаг 4
 for(let indexFilmsHier=0; indexFilmsHier<filmsHier.length; indexFilmsHier++)
@@ -278,9 +582,8 @@ for(let indexFilmsHier=0; indexFilmsHier<filmsHier.length; indexFilmsHier++)
     
     let myFilm=new Film();
     const name = film.getName.apply({
-        name:'тест'});
-    console.log(name);
-    //console.log(myFilm.getName.apply(filmsHire[indexFilmsHier]));
+        name:'тест шаг4'});
+    //console.log(name);
 }
 
 
@@ -301,7 +604,7 @@ for(let index=0;index<filmsHier.length;index++)
     {
         styleIndex++;
     }
-    tableBody.appendChild(filmsHier[index].getRenderStringForSelectFilm(styleIndex));
+    tableBody.appendChild(filmsHier[index].getRenderStringForSelectFilm(styleIndex, index));
 }
 
 //переменная которая получает доступ к мозайке фильмов 
