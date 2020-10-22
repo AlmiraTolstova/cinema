@@ -264,7 +264,7 @@ class Film{
                 orderFilmTotalPrice = document.getElementById('orderFilmTotalPrice'),
                 orderFilmTicketsNumberList = document.getElementById('orderFilmNumberPlaces');
         
-            orderFilmTotalPrice.innerHTML = customerOrder.getOrderPlacesCustom();//filmPrice * orderFilmCountTicket.value;
+            orderFilmTotalPrice.innerHTML = customerOrder.getOrderPlacesCustom();
             orderFilmTicketsNumberList.innerHTML=customerOrder.getOrderPlacesList();
             orderFilmCountTicket.innerHTML=customerOrder.getOrderPlacesCount();
         }
@@ -324,10 +324,11 @@ for(let filmIndex=0;filmIndex<films.length;filmIndex++)
 //------------------объект Place-----------------------//
 class Place{
     //поля
-    constructor(number, price, booking){
+    constructor(number, price, booking, paid){
         this.number=number;     //номер места
         this.price=price;       //цена
         this.booking=booking;   //флаг брони
+        this.paid=paid;         //флаг оплачено
     }
 }
 
@@ -341,14 +342,19 @@ function refreshFilmPlaces(){
         let newPlaces=[];
         for(let j=1; j<11;j++)
         {
-            newPlace = new Place(j,filmsHier[i].getPrice(),false);
+            if(j>2 & j<5){
+                newPlace = new Place(j,filmsHier[i].getPrice(),true, true);
+            }
+            else{
+                newPlace = new Place(j,filmsHier[i].getPrice(),false, false);
+            }
+
             newPlaces.push(newPlace);
         }
         places.push(newPlaces);
     }
 }
 refreshFilmPlaces();
-
 //console.log(places);
 
 //-------Объект заказ для хранения данных о заказе-----//
@@ -387,7 +393,7 @@ class CustomerOrder{
     }
     //добавить заказанное место в перечень заказов
     addOrderToOrderList(number, price, booking){
-        let newPlace = new Place(number, price, booking);
+        let newPlace = new Place(number, price, booking, false);
         this.places.push(newPlace);
     }
     //удалить заказанное место из перечня заказов
@@ -399,7 +405,7 @@ class CustomerOrder{
             if(this.places[i].number==number)
             {
                 //удалим текущий элемент
-                this.places.slice(i,1);
+                this.places.splice(i,1);
                 //и прервем цикл и выйдем
                 break;
             }
@@ -420,26 +426,29 @@ let indexCurrentFilm=0;
 //------------ШАГ8 рендерим места в форму---------------//
 function refreshCinemaPlaces(index)
 {
-    console.log(places[index]);
+    console.log(customerOrder);
     let divCinemaTickets = document.getElementById('cinema-tickets');
     divCinemaTickets.innerHTML='';    
     for(let i=0; i<places[index].length;i++){
         let newDiv = document.createElement('div');
         newDiv.classList.add('square');
-        //если место уже занято, то добавляем класс busy, цвет красный
-        if(places[index][i].booking==true)
+        //если место уже занято, то добавляем класс busy, цвет оранжевый
+        if(places[index][i].booking==true & places[index][i].paid==true)
+        {
+            newDiv.classList.add('paid');
+        }
+        else if(places[index][i].booking==true & places[index][i].paid==false) //иначе, добавляем класс spare, цвет зеленый
         {
             newDiv.classList.add('busy');
         }
-        else    //иначе, добавляем класс spare, цвет синий
-        {
+        else if(places[index][i].booking==false & places[index][i].paid==false){
             newDiv.classList.add('spare');
         }
         newDiv.innerHTML=(places[index][i].number);
         //обработка клика на квадрате с местом
-        newDiv.addEventListener('click',order);//{handleEvent:order, indexFilm:index}
+        newDiv.addEventListener('click',order);
         //обработка правого клика на квадрате с местом
-        newDiv.addEventListener('contextmenu',placeContext.bind(null, places[index][i].price));
+        newDiv.addEventListener('contextmenu',placeContext.bind(null, places[index][i].price));//убрать bind
         //обработка события перемещения курсора мыши над элементом
         newDiv.addEventListener('mouseover',placeHover);
         //обработка события перемещения курсора мыши за пределы элемента
@@ -451,13 +460,11 @@ function refreshCinemaPlaces(index)
                 orderFilmTotalPrice = document.getElementById('orderFilmTotalPrice'),
                 orderFilmTicketsNumberList = document.getElementById('orderFilmNumberPlaces');
         
-    orderFilmTotalPrice.innerHTML = customerOrder.getOrderPlacesCustom();//filmPrice * orderFilmCountTicket.value;
+    orderFilmTotalPrice.innerHTML = customerOrder.getOrderPlacesCustom();
     orderFilmTicketsNumberList.innerHTML=customerOrder.getOrderPlacesList();
     orderFilmCountTicket.innerHTML=customerOrder.getOrderPlacesCount();
 }
 
-//--------Первое заполнение формы с местами в зале--------//
-//refreshCinemaPlaces(0);
 
 //---------ШАГ 9 создание функций обработчиков------------//
 window.order9=function(){
@@ -477,15 +484,13 @@ window.placeHoverOut9=function(){
 }
 //обработка клика на квадрате с местом
 function order(e){
-    //window.order9();
-    //console.log(e.target.innerHTML);
     console.log(e.target.innerHTML);
     //переменная, в которой хранится признак успешности отметки
     let successFinded=false;
     //если содержимое div квадратика с местом не пустой
     if(e.target.innerHTML!=null)
     {
-        console.log(places[indexCurrentFilm]);
+        //console.log(places[indexCurrentFilm]);
         //запустим цикл по массиву с местами, найдем выбранное место и отметим его
         for(let i=0; i<places[indexCurrentFilm].length;i++)
         {
@@ -494,12 +499,12 @@ function order(e){
                 //выставим признак успешного поиска места
                 successFinded=true;
                 //проверяем было ли данное место уже заказано
-                if(places[indexCurrentFilm][i].booking==true)
+                if(places[indexCurrentFilm][i].paid==true)
                 {
-                    alert('Данное место уже было куплено, закажите пожалуйста другое');
+                    alert('Данное место уже забронировано, закажите пожалуйста другое');
                     break;
                 }
-                else
+                else if(places[indexCurrentFilm][i].booking==false)
                 {
                     //установим признак брони данного места
                     places[indexCurrentFilm][i].booking=true;
@@ -507,7 +512,12 @@ function order(e){
                     customerOrder.addOrderToOrderList(places[indexCurrentFilm][i].number,places[indexCurrentFilm][i].price,places[indexCurrentFilm][i].booking);
                     break;
                 }
-                
+                else if(places[indexCurrentFilm][i].booking==true){
+                    places[indexCurrentFilm][i].booking=false;
+                    customerOrder.removeOrderFromOrderList(e.target.innerHTML);
+                }
+        
+
             }
         }
         if(successFinded!=true)
@@ -614,64 +624,3 @@ for(let indexMosaicFilms=0; indexMosaicFilms<filmsNew.length;indexMosaicFilms++)
     mosaicTable.appendChild(filmsNew[indexMosaicFilms].getRenderStringForNewFilms());
 }
 
-/*
-for (let index = 0; index < films.length; index++) {
-    
-    let new_tr = document.createElement('tr');
-    new_tr.classList.add('movi-list__table_tbody_tr' + styleIndex);
-    new_tr.classList.add('row-height');
-    //готовим стили для строк по индексу, всего 4, перебираем их
-    if(styleIndex>=4)
-    {
-        styleIndex=1;
-    }
-    else
-    {
-        styleIndex++;
-    }
-    // пустая ячейка
-    let empty_cell = document.createElement('td');
-    //ячейка время
-    new_td1 = document.createElement('td');
-    new_td1.innerHTML = films[index].Time;
-    new_td1.classList.add('vertical-align');
-    new_td1.classList.add('center');
-    //ячейка название
-    new_td2 = document.createElement('td');
-    let url = document.createElement('a');
-    url.innerHTML = films[index].Name;
-    url.href = films[index].href;
-    url.target = '_blank';
-    new_td2.appendChild(url);
-    new_td2.classList.add('vertical-align');
-    new_td2.classList.add('indent66');
-    // ячейка жанр
-    let newJanre = '';
-    for (let ind = 0; ind < films[index].id.length; ind++) {
-        newJanre += Janres[films[index].id[ind]];
-        if (ind != films[index].id.length - 1) {
-            newJanre += ', ';
-        }
-
-    }
-    let new_td4 = document.createElement('td');
-    new_td4.classList.add('vertical-align');
-    new_td4.innerHTML = newJanre;
-    //кнопка добавить
-    new_td3 = document.createElement('td');
-    new_td3.classList.add('vertical-align');
-    new_td3.classList.add('indent49');
-    let newimg = document.createElement('img');
-    newimg.classList.add('movi-list__button-plus');
-    newimg.src = 'images/button-plus.svg';
-    newimg.alt = 'Кнопка';
-    new_td3.appendChild(newimg);
-    //формируем строку
-    new_tr.appendChild(empty_cell);
-    new_tr.appendChild(new_td1);
-    new_tr.appendChild(new_td2);
-    new_tr.appendChild(new_td4);
-    new_tr.appendChild(new_td3);
-    //добавляем новую строку в таблицу
-    tableBody.appendChild(new_tr)
-}*/

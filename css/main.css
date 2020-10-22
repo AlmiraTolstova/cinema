@@ -567,6 +567,10 @@ padding-top: 0.85rem;
     background: gray;
 }
 
+.paid{
+    background: rgb(117, 112, 187);
+}
+
 .cinema-tickets{
     text-align: center;
     margin-top: 1rem;
