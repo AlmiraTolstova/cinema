@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="js/plagins/owlcarusel/css/owl.carousel.min.css">
     <link rel="stylesheet" href="js/plagins/owlcarusel/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/media.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" />
 
 </head>
 
@@ -56,10 +57,10 @@
                         </div>
 
                     </div>
-                    <div class="block1__city">
-                        <p class="block1__city-p">
-                            <span>Ваш город</span>
-                            <a href="#">Казань</a>
+                    <div class="block1__city" >
+                        <p class="block1__city-p" >
+                            <span > Ваш город</span>
+                            <a href="#" id="city_name">--не определен</a>
                         </p>
                     </div>
                 </div>
@@ -248,33 +249,39 @@
             <div class="close">
                 <i id="popap_close" class="icon icon-cross icon__close" title="cross"></i>
             </div>
-            <form action="">
+            <form  id="form-feedback"><!--action="/php/server.php" method="POST" -->
                 <div class="order-form__body">
-                    <input type="text" class="order-form__input-fields" placeholder="Имя*" name="" id="text11" required>
+                    <input type="text" class="order-form__input-fields" placeholder="Имя*" name="name" id="text11" required>
                     <div class="order-form__select-place">
                         <!--Выпадающий список-->
-                        <select id="select" type="text" required="" class="order-form__input-fields">
+                        <select id="select" type="text" required name="select_place" class="order-form__input-fields">
                             <option>Выберите место</option>
-                            <option>Выбор 1</option>
-                            <option>Выбор 2</option>
-                            <option>Выбор 3</option>
-                            <option>Выбор 4</option>
-                            <option>Выбор 5</option>
-                            <option>Выбор 6</option>
-                            <option>Выбор 7</option>
-                            <option>Выбор 8</option>
-                            <option>Выбор 9</option>
-                            <option>Выбор 10</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
                         </select>
                     </div>
+                    <div>
+                        <input type="text" class="order-form__input-fields" placeholder="e-mail*" name="email" id="text12" required>
+                    </div>
+                    <div>
+                        <input type="text" class="order-form__input-fields" placeholder="phone*" name="phone" id="text13" required>
+                    </div>
                     <div class="popup-error-message">
-
                     </div>
                     <div class="order-form__input-wrap">
                         <label for="agree"></label>
-                        <input type="checkbox" name="agree" id="agree">Я согласен на обработку персональных данных
+                        <input type="checkbox" name="agree" id="agree" required>Я согласен на обработку персональных данных
                         <div class="popup-error-message"></div>
                     </div>
+
                     <div class="order-form__input-wrap">
                         <label for="submit"></label>
                         <input type="submit" value="Заказать" class="block4__button-style" id="submit">
@@ -507,7 +514,42 @@
         <script src="javascript/films.js"></script>
         <script src="js/plagins/owlcarusel/js/custom.js"></script>
         <script src="popup.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.js" integrity="sha512-j7/1CJweOskkQiS5RD9W8zhEG9D9vpgByNGxPIqkO5KrXrwyDAroM9aQ9w8J7oRqwxGyz429hPVk/zR6IOMtSA==" crossorigin="anonymous"></script>
+        <script src="ajax.js"></script>
     </footer>
+
+    <!--Hidden valley-->
+    <div id="choose_city" class="modal modal-city" > <!--style="display:none;"-->
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form class="formv">
+                    <fieldset>
+                        <div class="modal-header">
+                            <p class="modal-title">Ваш город</p>
+                        </div>
+                        <div class="modal-body">
+                            <div class="input-group">
+                                <input class="st-input4" type="text" name="city_choose" id="">
+                            </div>
+                            <div id="search_result">
+
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+
+                        </div>
+                    </fieldset>
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="ajax-loader"></div>
+
+
 </body>
 
 </html>
