@@ -1,6 +1,6 @@
 <?php
 if(!isset($_GET['name'])){
-    header('location: /index.html' );
+    header('location: /index.php' );
 }
 ?>
 <!DOCTYPE html>
@@ -29,10 +29,13 @@ if(!isset($_GET['name'])){
 <body>
 
     <h1 >Спасибо, <?php echo $_GET['name']?>, мы свяжемся с Вами в ближайшее время!</h1>
-    <form action="/index.html">
+    
+    <form action="/index.php">
         <button>
             Вернуться на главную
         </button>
     </form>
 </body>
 </html>
+
+<p>Спасибо за покупку,<?php echo $_SESSION['user_name'] ?>!</p>

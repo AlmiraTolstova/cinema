@@ -205,7 +205,7 @@
     <!--Четвертый экран-->
 
     <div class="block4">
-        <div class="block4__container">
+        <div class="block4__container" id="block4_container">
 
             <img class="block4__image" src="images/b4_img.jpg" alt="Изображение подарка">
 
@@ -249,9 +249,9 @@
             <div class="close">
                 <i id="popap_close" class="icon icon-cross icon__close" title="cross"></i>
             </div>
-            <form  id="form-feedback"><!--action="/php/server.php" method="POST" -->
+            <form  id="form-feedback" action="/php/server.php" method="POST"><!-- -->
                 <div class="order-form__body">
-                    <input type="text" class="order-form__input-fields" placeholder="Имя*" name="name" id="text11" required>
+                    <input type="text" class="order-form__input-fields" placeholder="Имя*" name="name" id="present_name" required>
                     <div class="order-form__select-place">
                         <!--Выпадающий список-->
                         <select id="select" type="text" required name="select_place" class="order-form__input-fields">
@@ -269,10 +269,10 @@
                         </select>
                     </div>
                     <div>
-                        <input type="text" class="order-form__input-fields" placeholder="e-mail*" name="email" id="text12" required>
+                        <input type="text" class="order-form__input-fields" placeholder="e-mail*" name="mail" id="present_mail" required>
                     </div>
                     <div>
-                        <input type="text" class="order-form__input-fields" placeholder="phone*" name="phone" id="text13" required>
+                        <input type="text" class="order-form__input-fields" placeholder="phone*" name="phone" id="present_phone" required>
                     </div>
                     <div class="popup-error-message">
                     </div>
@@ -291,7 +291,9 @@
             </form>
         </div>
     </div>
-    <!------------------------------------------->
+
+
+    <!----------------------------------------------------------->
     <!--------------Форма покупки билетов-------->
     <div id="order-tickets__place" class="order-tickets hidden" ><!----> <!--style="display: none";-->
         <form action="order.php" class="order-tickets__form" id="orderForm">
@@ -333,7 +335,7 @@
                     <div class="order-tickets__customer ">
                         <label for="text-name" >Имя</label>
                         <input type="text" class="order-tickets__mod-marg-left" name="name" id="text-name" placeholder="Введите имя">
-                        <p class="popup-error-message"></p>
+                        <p class="popup-error-message" id=""></p>
                     </div>
                 </div> 
                 <div id="cinema-tickets" class="cinema-tickets">
@@ -463,8 +465,8 @@
                     padding: 0;
                   }
                 </style>
-              <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/42/8/intl/ru_ALL/common.js" nonce="">
-              </script>
+              < type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/42/8/intl/ru_ALL/common.js" nonce="">
+              </>
               <script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/42/8/intl/ru_ALL/util.js" nonce=""></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/42/8/intl/ru_ALL/map.js" nonce=""></script><style>.gm-style .icon{background-image:url(https://maps.gstatic.com/mapfiles/embed/images/entity11.png);background-size:70px 210px}.embed-cn .gm-style .icon{background-image:url(http://maps.gstatic.cn/mapfiles/embed/images/entity11.png)}@media (-webkit-min-device-pixel-ratio:1.2),(min-resolution:1.2dppx),(min-resolution:116dpi){.gm-style .icon{background-image:url(https://maps.gstatic.com/mapfiles/embed/images/entity11_hdpi.png);background-size:70px 210px}.embed-cn .gm-style .icon{background-image:url(http://maps.gstatic.cn/mapfiles/embed/images/entity11_hdpi.png)}}.gm-style .experiment-icon{background-image:url(https://maps.gstatic.com/mapfiles/embed/images/exp2.png);background-size:109px 276px}@media (-webkit-min-device-pixel-ratio:1.2),(min-resolution:1.2dppx),(min-resolution:116dpi){.gm-style .experiment-icon{background-image:url(https://maps.gstatic.com/mapfiles/embed/images/exp2_hdpi.png);background-size:109px 276px}}div.login-control{font-family:Roboto,Arial;font-size:11px;color:white;margin-top:10px;margin-right:10px;font-weight:500;box-shadow:rgba(0,0,0,0.298039) 0px 1px 4px -1px}div.login{border-radius:2px;background-color:#5f84f2;padding:4px 8px;cursor:pointer}.gm-style .login-control .tooltip-anchor{color:#5B5B5B;display:none;font-family:Roboto,Arial;font-size:12px;font-weight:normal;-moz-user-select:text;-webkit-user-select:text;-ms-user-select:text;user-select:text;width:50%}.gm-style .login-control:hover .tooltip-anchor{display:inline}.gm-style .login-control .tooltip-content{background-color:white;font-weight:normal;left:-150px;width:150px}html[dir="rtl"] .gm-style .login-control .tooltip-content{right:-20px}div.login a:link{text-decoration:none;color:inherit}div.login a:visited{color:inherit}div.login a:hover{text-decoration:underline}div.email-account-learn{float:left}div.email{font-weight:500;font-size:12px;padding:6px}div.profile-photo{border-radius:2px;width:28px;height:28px;overflow:hidden}div.profile-photo-light{background-color:white}div.profile-photo-light div{color:black}div.profile-photo-dark{background-color:black}div.profile-photo-dark:hover{background-color:white;color:black}div.profile-photo:hover{width:auto}div.profile-email:hover{height:52px}a.profile-photo-link-float{float:left}div.profile-photo a{margin-right:8px;margin-left:8px;margin-top:6px;height:24px;overflow:hidden}div.profile-photo a{text-decoration:none;color:#3a84df}div.profile-photo a:hover{text-decoration:underline}div.profile-photo img{float:right;padding-top:2px;padding-right:2px;padding-left:2px;width:24px}.gm-style .g-logo{background-position:-21px -138px;display:inline-block;height:12px;padding-right:6px;vertical-align:middle;width:8px}</style><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/42/8/intl/ru_ALL/overlay.js" nonce=""></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/42/8/intl/ru_ALL/onion.js" nonce=""></script><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/42/8/intl/ru_ALL/search_impl.js" nonce=""></script><style>.gm-style .place-card div,.gm-style .place-card a,.gm-style .default-card div,.gm-style .default-card a{color:#5B5B5B;font-family:Roboto,Arial;font-size:12px;-moz-user-select:text;-webkit-user-select:text;-ms-user-select:text;user-select:text}.gm-style .place-card,.gm-style .default-card,.gm-style .directions-card{cursor:default}.gm-style .place-card-large{padding:9px 4px 9px 11px}.gm-style .place-card-medium{width:auto;padding:9px 11px 9px 11px}.gm-style .default-card{padding:5px 14px 5px 14px}.gm-style .place-card a:link,.gm-style .default-card a:link,.gm-style .directions-card a:link{text-decoration:none;color:#3a84df}.gm-style .place-card a:visited,.gm-style .default-card a:visited,.gm-style .directions-card a:visited{color:#3a84df}.gm-style .place-card a:hover,.gm-style .default-card a:hover,.gm-style .directions-card a:hover{text-decoration:underline}.gm-style .place-desc-large{width:200px;display:inline-block}.gm-style .place-desc-medium{display:inline-block}.gm-style .place-card .place-name{overflow:hidden;white-space:nowrap;text-overflow:ellipsis;font-weight:500;font-size:14px;color:black}html[dir="rtl"] .gm-style .place-name{padding-right:5px}.gm-style .place-card .address{margin-top:6px}.gm-style .tooltip-anchor{width:100%;position:relative;float:right;z-index:1}.gm-style .star-entity .tooltip-anchor,.gm-style .star-entity-medium .tooltip-anchor,.gm-style .navigate .tooltip-anchor{width:50%;display:none}.gm-style .star-entity:hover .tooltip-anchor,.gm-style .star-entity-medium:hover .tooltip-anchor,.gm-style .navigate:hover .tooltip-anchor{display:inline}.gm-style .tooltip-anchor>.tooltip-tip-inner,.gm-style .tooltip-anchor>.tooltip-tip-outer{width:0;height:0;border-left:8px solid transparent;border-right:8px solid transparent;background-color:transparent;position:absolute;left:-8px}.gm-style .tooltip-anchor>.tooltip-tip-outer{border-bottom:8px solid #CBCBCB}.gm-style .tooltip-anchor>.tooltip-tip-inner{border-bottom:8px solid white;z-index:1;top:1px}.gm-style .tooltip-content{position:absolute;top:8px;left:-70px;line-height:137%;padding:10px 12px 10px 13px;width:210px;margin:0;border:1px solid #CBCBCB;border:1px solid rgba(0,0,0,0.2);border-radius:2px;box-shadow:0 2px 4px rgba(0,0,0,0.2);background-color:white}html[dir="rtl"] .gm-style .tooltip-content{left:-10px}.gm-style .star-entity-medium .tooltip-content{width:110px}.gm-style .navigate{display:inline-block;vertical-align:top;height:43px;padding:0 7px}.gm-style .navigate-link{display:block}.gm-style .place-card .navigate-text,.gm-style .place-card .star-entity-text{margin-top:5px;text-align:center;color:#3a84df;font-size:12px;max-width:55px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}.gm-style .place-card .hidden{margin:0;padding:0;height:0;overflow:hidden}.gm-style .navigate-icon{width:22px;height:22px;overflow:hidden;margin:0 auto}.gm-style .navigate-icon{border:0}.gm-style .navigate-separator{display:inline-block;width:1px;height:43px;vertical-align:top;background:-webkit-linear-gradient(top,#fbfbfb,#e2e2e2,#fbfbfb);background:-moz-linear-gradient(top,#fbfbfb,#e2e2e2,#fbfbfb);background:-ms-linear-gradient(top,#fbfbfb,#e2e2e2,#fbfbfb);background:-linear-gradient(top,#fbfbfb,#e2e2e2,#fbfbfb)}.gm-style .star-entity{display:inline-block;vertical-align:top;height:43px;padding:0 7px}.gm-style .star-entity .star-button{cursor:pointer}.gm-style .star-entity-medium{display:inline-block;vertical-align:top;width:17px;height:17px;margin-top:1px}.gm-style .star-entity:hover .star-entity-text{text-decoration:underline}.gm-style .star-entity-icon-large{width:22px;height:22px;overflow:hidden;margin:0 auto}.gm-style .star-entity-icon-medium{width:17px;height:17px;top:0px;overflow:hidden;margin:0 auto}.gm-style .can-star-large{position:relative;cursor:pointer;width:22px;height:22px;overflow:hidden;margin:0 auto}.gm-style .logged-out-star,.logged-out-star:hover{position:relative;cursor:pointer;width:22px;height:22px;overflow:hidden;margin:0 auto}.gm-style .is-starred-large{position:relative;cursor:pointer;width:22px;height:22px;overflow:hidden;margin:0 auto}.gm-style .can-star-medium{position:relative;height:17px;top:-2px;cursor:pointer}.gm-style .is-starred-medium{position:relative;height:17px;top:-2px;cursor:pointer}.gm-style .review-box{padding-top:5px}.gm-style .place-card .review-box-link{padding-left:8px}.gm-style .place-card .review-number{display:inline-block;color:#e7711b;font-weight:500;font-size:14px}.gm-style .rating-star{display:inline-block;width:11px;height:11px;overflow:hidden}.gm-style .directions-card{color:#5B5B5B;font-family:Roboto,Arial;background-color:white;-moz-user-select:text;-webkit-user-select:text;-ms-user-select:text;user-select:text}.gm-style .directions-card-medium-large{height:61px;padding:10px 11px}.gm-style .directions-info{padding-left:25px}.gm-style .directions-waypoint{height:20px}.gm-style .directions-address{font-weight:400;font-size:13px;overflow:hidden;white-space:nowrap;text-overflow:ellipsis;color:black}.gm-style .directions-icon{float:left;vertical-align:top;position:relative;top:-1px;height:50px;width:20px}.gm-style .directions-icon div{width:15px;height:45px;overflow:hidden}.gm-style .directions-separator{position:relative;height:1px;margin-top:3px;margin-bottom:4px;background-color:#ccc}.gm-style .maps-links-box-exp{padding-top:5px}.gm-style .time-to-location-info-exp{padding-right:10px;border-right:1px solid #ccc;margin-right:10px;display:inline-block}.gm-style .google-maps-link-exp{display:inline-block;vertical-align:middle}.gm-style .time-to-location-text-exp{vertical-align:middle}.gm-style .place-card-large .only-visible-to-you-exp{padding-top:5px;color:#ccc;display:inline-block}.gm-style .place-card-large .time-to-location-privacy-exp .learn-more-exp{color:#ccc;text-decoration:underline}.gm-style .navigate-icon{background-position:0px 0px}.gm-style .navigate:hover .navigate-icon{background-position:48px 0px}.gm-style .can-star-large{background-position:70px 187px}.gm-style .star-button:hover .can-star-large{background-position:48px 187px}.gm-style .logged-out-star{background-position:96px 187px}.gm-style .star-button:hover .logged-out-star{background-position:96px 187px}.gm-style .is-starred-large{background-position:0px 166px}.gm-style .rating-full-star{background-position:48px 165px}.gm-style .rating-half-star{background-position:35px 165px}html[dir="rtl"] .gm-style .rating-half-star{background-position:10px 165px}.gm-style .rating-empty-star{background-position:23px 165px}.gm-style .directions-icon{background-position:0px 144px}.gm-style .hovercard-personal-icon-home{background-position:96px 102px}.gm-style .hovercard-personal-icon-work{background-position:96px 79px}.gm-style .can-star-medium{background-position:0px 36px}.gm-style .can-star-medium:hover{background-position:-17px 36px}.gm-style .logged-out-star-medium{background-position:36px 36px}.gm-style .star-button:hover .logged-out-star-medium{background-position:36px 36px}.gm-style .is-starred-medium{background-position:0px 19px}.gm-style .info{height:30px;width:30px;background-position:19px 36px}.gm-style .bottom-actions{padding-top:10px}.gm-style .bottom-actions .google-maps-link{display:inline-block}.saved-from-source-link{margin-top:5px;max-width:331px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}</style><script type="text/javascript" charset="UTF-8" src="https://maps.googleapis.com/maps-api-v3/api/js/42/8/intl/ru_ALL/controls.js" nonce=""></script><style>.gm-style .hovercard{background-color:white;border-radius:1px;box-shadow:0 2px 2px rgba(0,0,0,0.2);-moz-box-shadow:0 2px 2px rgba(0,0,0,0.2);-webkit-box-shadow:0 2px 2px rgba(0,0,0,0.2);padding:9px 10px;cursor:auto}.gm-style .hovercard a:link{text-decoration:none;color:#3a84df}.gm-style .hovercard a:visited{color:#3a84df}.gm-style .hovercard .hovercard-title{font-size:13px;font-weight:500;white-space:nowrap}.gm-style .hovercard .hovercard-personal-icon{margin-top:2px;margin-bottom:2px;margin-right:4px;vertical-align:middle;display:inline-block}.gm-style .hovercard .hovercard-personal-icon-alias{width:20px;height:20px;overflow:hidden}html[dir="rtl"] .gm-style .hovercard .hovercard-personal-icon-home{right:-7px}html[dir="rtl"] .gm-style .hovercard .hovercard-personal-icon-work{right:-7px}.gm-style .hovercard .hovercard-personal,.gm-style .hovercard .hovercard-personal-text,.gm-style .hovercard .hovercard-personal-link{font-size:11px;color:#333;vertical-align:middle}.gm-style .hovercard .hovercard-personal-link{color:#3a84df;text-decoration:none}</style></head>
               <body jstcache="0" style="overflow: hidden; background-color: grey;">
                 
@@ -510,6 +512,7 @@
 
 
         <script src="javascript/jquery.js"></script>
+        <script src="javascript/jquery_mask.js"></script>
         <script src="js/plagins/owlcarusel/js/owl.carousel.min.js"></script>
         <script src="javascript/films.js"></script>
         <script src="js/plagins/owlcarusel/js/custom.js"></script>
@@ -517,9 +520,20 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.js" integrity="sha512-j7/1CJweOskkQiS5RD9W8zhEG9D9vpgByNGxPIqkO5KrXrwyDAroM9aQ9w8J7oRqwxGyz429hPVk/zR6IOMtSA==" crossorigin="anonymous"></script>
         <script src="ajax.js"></script>
+
+        <!-- <script>
+            // let val = encodeURIComponent('Василий Петрович')
+            // document.cookie = 'user_1=5';
+                      function getCookie(name) {
+                var matches = document.cookie.match(new RegExp(
+                    "(?:^|; ) + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+                ))
+                return matches ? decodeURIComponent(matches[1]) : undefined
+            }
+        </script> -->
     </footer>
 
-    <!--Hidden valley-->
+    // <!--Hidden valley-->
     <div id="choose_city" class="modal modal-city" > <!--style="display:none;"-->
         <div class="modal-dialog">
             <div class="modal-content">
@@ -548,7 +562,36 @@
 
     </div>
     <div class="ajax-loader"></div>
-
+    <!--------------Тут кусок php кода, ловим переменные--------->
+    <script>
+        if('<?php echo isset($_GET['name']);?>'=='1') {
+            let name = '<?php echo $_GET['name'];?>';
+            let select_place = '<?php echo $_GET['select_place'];?>';
+            let agree = '<?php echo $_GET['agree'];?>';
+            let mail = '<?php echo $_GET['mail'];?>';
+            let phone = '<?php echo $_GET['phone'];?>';
+            let invalid = '<?php echo $_GET['invalid'];?>';
+            console.log(name + select_place + agree + mail + phone+invalid);
+            if(invalid==1)
+            {
+                document.getElementById('block4_container').scrollIntoView(true);
+                const popap = document.getElementById('popap');
+                popap.classList.remove('hidden');
+                let form_present_name = document.getElementById('present_name');
+                let form_select = document.getElementById('select');
+                let form_present_mail = document.getElementById('present_mail');
+                let form_present_phone = document.getElementById('present_phone');
+                let form_agree = document.getElementById('agree');
+                form_present_name.value = name;
+                form_select.value = select_place;
+                form_present_mail.value = mail;
+                form_present_phone.value = phone;
+                if(agree=='on'){
+                    form_agree.checked = true;
+                }else {form_agree.checked = false;}
+            }
+        }
+    </script>
 
 </body>
 

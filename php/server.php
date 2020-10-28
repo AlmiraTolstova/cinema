@@ -9,6 +9,22 @@ class userData{
     public $phone = '+79XXXXXXXXX';
 
     //методы
+    /**checkEmail($mail)
+     * Проверяет корректность заполненных пользователем данных (должны присутствовать домены org и com)
+     * @param String @mail
+     * 
+     * @return boolean
+     */
+
+    function checkEmail($mail){
+        if(substr_count($mail, 'org')>0 || substr_count($mail, 'com')>0){
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+
     /*checkData
         Проверяет корректность заполненных пользователем данных
         @param String @name
@@ -17,8 +33,8 @@ class userData{
 
         @return boolean
      */
-    public function checkData($name, $select_place, $agree){
-        if(($name !='') & ( $select_place!='Выберите место') & ($agree!=false))
+    public function checkData($name, $select_place, $agree, $mail, $phone){
+        if(($name !='') & ( $select_place!='Выберите место') & ($agree!=false) & ($mail!='')&($phone!='') & $this->checkEmail($mail)==1)
         {
             return true;
         }
@@ -36,18 +52,25 @@ class userData{
      *
      * @return void
      */
-    public function saveData($name, $select_place, $agree) {
+    public function saveData($name, $select_place, $agree, $mail, $phone) {
         $this->name=$name;
         $this->select_place=$select_place;
         $this->agree=$agree;
+        $this->mail=$mail;
+        $this->phone=$phone;
     }
 
     /**returnError
      * Возврат пользователя на страницу заполнения формы
+     *  @param String @name
+     *  @param int $select_place
+     *  @param boolean $agree
+     * 
      * @return void
      */
-    public function returnError(){
-        header('location: /index.html' );
+    public function returnError($name, $select_place, $agree, $mail, $phone){
+        //перенаправляем на основную страницу и передаем queryString с всеми нужными данными для формы
+        header('location: /index.php?name=' . $name . '&select_place=' . $select_place . '&agree=' . $agree . '&mail=' . $mail . '&phone=' . $phone . '&invalid=' . true);
     }
 
     /**returnSuccess
@@ -55,20 +78,20 @@ class userData{
      * @return void
     */
     public function returnSuccess(){
-        header('location: /php/thanks.php?name=' . $this->name);
+        header('location: /php/thanks.php?name=' . $this->name . '&select_place=' . $this->select_place . '&agree=' . $this->agree . '&mail=' . $this->mail . '&phone=' . $this->phone);
     }
 }
 
 $user = new userData();
 
-if($user->checkData($_POST['name'], $_POST['select_place'], $_POST['agree'])=='on')
+if($user->checkData($_POST['name'], $_POST['select_place'], $_POST['agree'], $_POST['mail'], $_POST['phone'])==true)
 {
-    $user->saveData($_POST['name'], $_POST['select_place'], $_POST['agree']);
+    $user->saveData($_POST['name'], $_POST['select_place'], $_POST['agree'], $_POST['mail'], $_POST['phone']);
     $user->returnSuccess();
 }
 else
 {
-    $user->returnError();
+    $user->returnError($_POST['name'], $_POST['select_place'], $_POST['agree'], $_POST['mail'], $_POST['phone']);
 }
 
 // $name = $_POST['name'] ?? '';
@@ -77,7 +100,7 @@ else
 
 
 
-//для следующего ТЗ
+// для следующего ТЗ
 // include('client.php');
 // include('Database.php');
 
@@ -100,3 +123,22 @@ else
 //     setcookie('name', $_POST['name'], COOKIE_LIFETIME);
 //     setcookie('phone', $_POST['phone'], COOKIE_LIFETIME);
 // }
+
+
+
+// // Cookie
+// session_start();
+
+// $name = $_POST['name'] ?? '';
+// $phone = $_POST['phone'] ?? '';
+
+// $_SESSION['user_name'] = $name;
+// $_SESSION['user_name'] = $phone;
+// if (strlen($phone) < 5) {
+//     $_SESSION['error_phone'] = 'Слишком короткий номер телефона';
+//     header('location:/index.php');
+// } else{
+//     $_SESSION['error_phone'] = '';
+//     header('location:/thanks.php');
+// }
+

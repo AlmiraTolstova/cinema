@@ -11,4 +11,3 @@ openPopapButton.onclick = function(event){
     event.preventDefault();
     popap.classList.remove('hidden');
 }
-

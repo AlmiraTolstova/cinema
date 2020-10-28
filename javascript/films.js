@@ -1,3 +1,7 @@
+$(function(){
+    //2. Получить элемент, к которому необходимо добавить маску
+    $("#present_phone").mask("+7 (999) 999-99-99");
+});
 // ассоциативный массив жанров фильма
 const Janres = {
     0: 'Боевик',
@@ -593,21 +597,24 @@ for (let indexMosaicFilms = 0; indexMosaicFilms < filmsNew.length; indexMosaicFi
 }
 
 
-let formFeedback =document.getElementById('form-feedback');
-formFeedback.addEventListener('submit', feedbacksubmit);
-function feedbacksubmit(){
-    $.ajax({
-        url: 'php/server.php',
-        data: {name: 'user_name', select_place:'1', agree:'true'},
-        method: 'POST',
-        success: function(msg){
-            console.log(msg);
-        },
-        error: function(msg){
-            console.log(msg);
-        }
-        })
-}
+
+
+
+// let formFeedback =document.getElementById('form-feedback');
+// formFeedback.addEventListener('submit', feedbacksubmit);
+// function feedbacksubmit(){
+//     $.ajax({
+//         url: 'php/server.php',
+//         data: {name: 'user_name', select_place:'1', agree:'on'},
+//         method: 'POST',
+//         success: function(msg){
+//             console.log(msg);
+//         },
+//         error: function(msg){
+//             console.log(msg);
+//         }
+//         })
+// }
 // jQuerry(function($){
 //     $('form').on('submit', function(e)
 //     {
