@@ -521,16 +521,7 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.js" integrity="sha512-j7/1CJweOskkQiS5RD9W8zhEG9D9vpgByNGxPIqkO5KrXrwyDAroM9aQ9w8J7oRqwxGyz429hPVk/zR6IOMtSA==" crossorigin="anonymous"></script>
         <script src="ajax.js"></script>
 
-        <!-- <script>
-            // let val = encodeURIComponent('Василий Петрович')
-            // document.cookie = 'user_1=5';
-                      function getCookie(name) {
-                var matches = document.cookie.match(new RegExp(
-                    "(?:^|; ) + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
-                ))
-                return matches ? decodeURIComponent(matches[1]) : undefined
-            }
-        </script> -->
+       
     </footer>
 
     // <!--Hidden valley-->

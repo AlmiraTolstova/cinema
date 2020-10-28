@@ -600,36 +600,3 @@ for (let indexMosaicFilms = 0; indexMosaicFilms < filmsNew.length; indexMosaicFi
 
 
 
-// let formFeedback =document.getElementById('form-feedback');
-// formFeedback.addEventListener('submit', feedbacksubmit);
-// function feedbacksubmit(){
-//     $.ajax({
-//         url: 'php/server.php',
-//         data: {name: 'user_name', select_place:'1', agree:'on'},
-//         method: 'POST',
-//         success: function(msg){
-//             console.log(msg);
-//         },
-//         error: function(msg){
-//             console.log(msg);
-//         }
-//         })
-// }
-// jQuerry(function($){
-//     $('form').on('submit', function(e)
-//     {
-//         let form = $('form-feedback');
-//         e.preventDefault();
-//         $.ajax({
-//             url: '/server.php',
-//             data: form.serialize(),
-//             method: 'POST',
-//             success: function(msg){
-//                 console.log(msg);
-//             },
-//             error: function(){
-
-//             }
-//         })
-//     })
-// })
