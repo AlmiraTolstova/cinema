@@ -457,7 +457,7 @@ padding-top: 0.85rem;
     border-radius: 0.7rem;
     box-shadow: 1px 0px 5px rgb(125, 125, 125);
     box-sizing: border-box;
-    height: 28rem;
+    height: 33rem;
     width: 30rem;
     padding: 1rem;
     margin: 7.5rem auto;
@@ -768,48 +768,6 @@ padding-top: 0.85rem;
     background: rgba(255,255,255,0.8);
 }
 
-/*-----------Модальная форма Выбор города---------*/
-/*как оказалось стили подтянутся из fancy-box*/
-.modal{
-
-}
-
-.modal-city{
-
-}
-
-.modal-dialog{
-
-}
-
-.modal-content{
-
-}
-
-.formv{
-
-}
-
-.modal-header{
-
-}
-
-.modal-title{
-
-}
-
-.modal-body{
-
-}
-
-.input-group{
-
-}
-
-.st-input4{
-
-}
-/*----------конец модальной формы Выбор города---------*/
 /**Модификаторы**/
 .left {
     text-align: left;

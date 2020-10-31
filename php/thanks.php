@@ -28,7 +28,7 @@ if(!isset($_GET['name'])){
 </head>
 <body>
 
-    <h1 >Спасибо, <?php echo $_GET['name']?>, мы свяжемся с Вами в ближайшее время!</h1>
+    <h1 >Спасибо, <?php echo $_GET['name']?>, мы свяжемся с Вами в ближайшее время по телефону <?php echo $_GET['phone']?>!</h1>
     
     <form action="/index.php">
         <button>

@@ -268,10 +268,10 @@
                             <option>10</option>
                         </select>
                     </div>
-                    <div>
+                    <div class="order-form__select-place">
                         <input type="text" class="order-form__input-fields" placeholder="e-mail*" name="mail" id="present_mail" required>
                     </div>
-                    <div>
+                    <div class="order-form__select-place">
                         <input type="text" class="order-form__input-fields" placeholder="phone*" name="phone" id="present_phone" required>
                     </div>
                     <div class="popup-error-message">

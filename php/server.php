@@ -17,12 +17,7 @@ class userData{
      */
 
     function checkEmail($mail){
-        if(substr_count($mail, 'org')>0 || substr_count($mail, 'com')>0){
-            return true;
-        }
-        else{
-            return false;
-        }
+        return(substr_count($mail, 'org')>0 || substr_count($mail, 'com')>0);
     }
 
     /*checkData
@@ -34,14 +29,8 @@ class userData{
         @return boolean
      */
     public function checkData($name, $select_place, $agree, $mail, $phone){
-        if(($name !='') & ( $select_place!='Выберите место') & ($agree!=false) & ($mail!='')&($phone!='') & $this->checkEmail($mail)==1)
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
+        return(($name !='') & ( $select_place!='Выберите место') & ($agree!=false) & ($mail!='')&($phone!='') & $this->checkEmail($mail)==1);
+        
     }
 
     /**saveData
@@ -57,7 +46,24 @@ class userData{
         $this->select_place=$select_place;
         $this->agree=$agree;
         $this->mail=$mail;
-        $this->phone=$phone;
+        $this->phone=$this->preparePhone($phone);
+    }
+
+    /*preparePhone($phone)
+     * Подготавливает строку для сохранения (убирает все дефисы и скобки)
+     * @param String @name
+     * 
+     * @return String 
+    */
+    public function preparePhone($phone){
+        $preparedString='';
+        $preparedString=$phone;
+        $arrayReplaceSymbols=['-',' ', '(', ')', '[', ']', ',', '.', '_'];
+        $preparedString=str_replace($arrayReplaceSymbols,'',$preparedString);
+        if($preparedString[1]=='8'){
+            $preparedString[1]='7';
+        }
+        return $preparedString;
     }
 
     /**returnError
@@ -93,4 +99,5 @@ else
 {
     $user->returnError($_POST['name'], $_POST['select_place'], $_POST['agree'], $_POST['mail'], $_POST['phone']);
 }
+
 

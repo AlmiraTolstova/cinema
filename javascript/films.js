@@ -1,6 +1,6 @@
 $(function(){
     //2. Получить элемент, к которому необходимо добавить маску
-    $("#present_phone").mask("+7 (999) 999-99-99");
+    $("#present_phone").mask("+9(999)999-99-99");
 });
 // ассоциативный массив жанров фильма
 const Janres = {
@@ -595,8 +595,6 @@ let mosaicTable = document.getElementById('blockMosaicTable');
 for (let indexMosaicFilms = 0; indexMosaicFilms < filmsNew.length; indexMosaicFilms++) {
     mosaicTable.appendChild(filmsNew[indexMosaicFilms].getRenderStringForNewFilms());
 }
-
-
 
 
 
