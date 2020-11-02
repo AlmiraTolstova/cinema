@@ -1,8 +1,12 @@
+<!-- Сюда мы направляемся от server.php -->
 <?php
+// Проверяем заполненность строки name
 if(!isset($_GET['name'])){
+    //Если строка пустая, мы возвращаемся на index.php
     header('location: /index.php' );
 }
 ?>
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -12,7 +16,7 @@ if(!isset($_GET['name'])){
     <style>
         h1{
             font-size: 24px;
-            padding-left: 32%;
+            padding-left: 25%;
             padding-top: 20%;
         }
         button{
@@ -38,4 +42,3 @@ if(!isset($_GET['name'])){
 </body>
 </html>
 
-<p>Спасибо за покупку,<?php echo $_SESSION['user_name'] ?>!</p>

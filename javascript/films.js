@@ -1,7 +1,8 @@
 $(function(){
-    //2. Получить элемент, к которому необходимо добавить маску
+    //2. Получить элемент, к которому необходимо добавить маску для формы подарка по id
     $("#present_phone").mask("+9(999)999-99-99");
 });
+
 // ассоциативный массив жанров фильма
 const Janres = {
     0: 'Боевик',
@@ -199,7 +200,7 @@ class Film {
         this.image = image;
         this.price = price;
     }
-    //методы
+    //Методы
     getName() {
         return this.name;
     }
@@ -224,6 +225,7 @@ class Film {
 
     //-----------в параметр numberStyleRow передается номер стиля для формирования
     //-----------стиля в виде: movi-list__table_tbody_tr1
+    //Функция рендерит строку фильма в прокате, блок 3
     getRenderStringForSelectFilm(numberStyleRow, index) {
         let renderString = '';
         let filmRow = document.createElement('tr');
@@ -273,6 +275,7 @@ class Film {
         return filmRow;
     }
 
+    //Функция, которая рендерит ячейку мозаики фильмов в блоке 5
     getRenderStringForNewFilms() {
         let renderMosaicString = '';
         let block5Films = document.createElement('div');
@@ -352,7 +355,7 @@ function refreshFilmPlaces() {
     }
 }
 refreshFilmPlaces();
-//console.log(places);
+
 
 //-------Объект заказ для хранения данных о заказе-----//
 class CustomerOrder {
@@ -417,15 +420,16 @@ let indexCurrentFilm = 0;
 function refreshCinemaPlaces(index) {
     console.log(customerOrder);
     let divCinemaTickets = document.getElementById('cinema-tickets');
+    //Очистить отображение мест на форме
     divCinemaTickets.innerHTML = '';
     for (let i = 0; i < places[index].length; i++) {
         let newDiv = document.createElement('div');
         newDiv.classList.add('square');
-        //если место уже занято, то добавляем класс busy, цвет оранжевый
+        //если место уже куплено, то добавляем класс paid, цвет фиолетовый
         if (places[index][i].booking == true & places[index][i].paid == true) {
             newDiv.classList.add('paid');
         }
-        else if (places[index][i].booking == true & places[index][i].paid == false) //иначе, добавляем класс spare, цвет зеленый
+        else if (places[index][i].booking == true & places[index][i].paid == false) //иначе, добавляем класс busy, цвет оранжевый
         {
             newDiv.classList.add('busy');
         }
@@ -569,7 +573,7 @@ for (let indexFilmsHier = 0; indexFilmsHier < filmsHier.length; indexFilmsHier++
     const name = film.getName.apply({
         name: 'тест шаг4'
     });
-    //console.log(name);
+  
 }
 
 

@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="css/media.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css" integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" />
-
 </head>
 
 <body>
@@ -152,11 +151,7 @@
                     </p>
                 </div>
             </div>
-
-
         </section>
-
-
     </div>
     </div>
     <!--Конец второго экрана-->
@@ -243,6 +238,7 @@
             </div>
         </div>
     </div>
+
     <!---------------форма для подарка------------>
     <div id="popap" class="popap hidden">
         <div class="order-form">
@@ -291,11 +287,10 @@
             </form>
         </div>
     </div>
-
-
     <!----------------------------------------------------------->
+
     <!--------------Форма покупки билетов-------->
-    <div id="order-tickets__place" class="order-tickets hidden" ><!----> <!--style="display: none";-->
+    <div id="order-tickets__place" class="order-tickets hidden" >
         <form action="order.php" class="order-tickets__form" id="orderForm">
             <div id="closeOrderFrom" class="close">
                 <i id="popap_close" class="icon icon-cross icon__close" title="cross"></i>
@@ -374,6 +369,7 @@
         </div>
     </div>
     <!--Конец пятого экрана-->
+
     <!--Интерактивная карта-->
     <div class="block6__map">
         <!-- <img src="/images/1920x450.png" alt="Здесь интерактивная карта"> -->
@@ -488,6 +484,7 @@
         </iframe>
     </div>
     <!--Конец интерактивной карты-->
+
     <!--Подвал-->
     <footer class="my-footer" id="contacts">
         <div class="footer__container">
@@ -516,16 +513,16 @@
         <script src="js/plagins/owlcarusel/js/owl.carousel.min.js"></script>
         <script src="javascript/films.js"></script>
         <script src="js/plagins/owlcarusel/js/custom.js"></script>
-        <script src="popup.js"></script>
+        <script src="javascript/popup.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.js" integrity="sha512-j7/1CJweOskkQiS5RD9W8zhEG9D9vpgByNGxPIqkO5KrXrwyDAroM9aQ9w8J7oRqwxGyz429hPVk/zR6IOMtSA==" crossorigin="anonymous"></script>
-        <script src="ajax.js"></script>
+        <script src="javascript/ajax.js"></script>
 
        
     </footer>
 
-    // <!--Hidden valley-->
-    <div id="choose_city" class="modal modal-city" > <!--style="display:none;"-->
+    <!--Скрытая форма выбора города Fancybox-->
+    <div id="choose_city" class="modal modal-city" style="display:none;"> 
         <div class="modal-dialog">
             <div class="modal-content">
                 <form class="formv">
@@ -553,6 +550,7 @@
 
     </div>
     <div class="ajax-loader"></div>
+    
     <!--------------Тут кусок php кода, ловим переменные--------->
     <script>
         if('<?php echo isset($_GET['name']);?>'=='1') {
@@ -563,6 +561,7 @@
             let phone = '<?php echo $_GET['phone'];?>';
             let invalid = '<?php echo $_GET['invalid'];?>';
             console.log(name + select_place + agree + mail + phone+invalid);
+            //Если форма была заполнена с ошибкой
             if(invalid==1)
             {
                 document.getElementById('block4_container').scrollIntoView(true);

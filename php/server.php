@@ -47,16 +47,16 @@ class userData{
         $this->agree=$agree;
         $this->mail=$mail;
         $this->phone=$this->preparePhone($phone);
+
     }
 
-    /*preparePhone($phone)
+    /**preparePhone($phone)
      * Подготавливает строку для сохранения (убирает все дефисы и скобки)
      * @param String @name
      * 
      * @return String 
     */
     public function preparePhone($phone){
-        $preparedString='';
         $preparedString=$phone;
         $arrayReplaceSymbols=['-',' ', '(', ')', '[', ']', ',', '.', '_'];
         $preparedString=str_replace($arrayReplaceSymbols,'',$preparedString);
@@ -87,7 +87,7 @@ class userData{
         header('location: /php/thanks.php?name=' . $this->name . '&select_place=' . $this->select_place . '&agree=' . $this->agree . '&mail=' . $this->mail . '&phone=' . $this->phone);
     }
 }
-
+//Объяляем новый экземпляр класса userData
 $user = new userData();
 
 if($user->checkData($_POST['name'], $_POST['select_place'], $_POST['agree'], $_POST['mail'], $_POST['phone'])==true)

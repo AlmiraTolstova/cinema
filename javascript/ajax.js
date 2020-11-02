@@ -1,4 +1,6 @@
+//API Геолокацииб с помощью него мы определяем город
 const GEO_API = 'http://api.sypexgeo.net/',
+//Список населенных пунктов
 CITIES_API =  'https://glavpunkt.ru/api/get_rf_cities';
 
 let city = '',
@@ -88,10 +90,5 @@ jQuery(document).ready(($) => {
         }
 
     })
-    // getXmlRequest(GEO_API, function(){
-    // let response = $.parseJSON(this);
-    // city = response.city.name_ru
-    // console.log(city);
-    // $('#city_name').html(city);
-    // });
+ 
 })
